@@ -1,0 +1,105 @@
+<table border="0" cellpadding="0" cellspacing="0" width="320">
+<!-- fwtable fwsrc="/png/menu.png" fwbase="menu.png" fwstyle="Dreamweaver" fwdocid = "1008559318" fwnested="0" -->
+  <tr>
+   <td><img src="/png/spacer.gif" width="320" height="1" border="0" alt=""></td>
+   <td><img src="/png/spacer.gif" width="1" height="1" border="0" alt=""></td>
+  </tr>
+
+  <tr>
+   <td><img name="menu_r1_c1" src="/png/menu_r1_c1.png" width="320" height="43" border="0" alt=""></td>
+   <td><img src="/png/spacer.gif" width="1" height="43" border="0" alt=""></td>
+  </tr>
+  <tr>
+   <td><a href="/cake/upload/top/"><img name="menu_r2_c1" src="/png/menu_r2_c1.png" width="320" height="51" border="0" alt=""></a></td>
+   <td><img src="/png/spacer.gif" width="1" height="51" border="0" alt=""></td>
+  </tr>
+  <tr>
+   <td><a href="/cake/manage/my_list/"><img name="menu_r3_c1" src="/png/menu_r3_c1.png" width="320" height="57" border="0" alt=""></a></td>
+   <td><img src="/png/spacer.gif" width="1" height="57" border="0" alt=""></td>
+  </tr>
+  <tr>
+   <td><a href="/cake/gallery/mymixi/"><img name="menu_r4_c1" src="/png/menu_r4_c1.png" width="320" height="55" border="0" alt=""></a></td>
+   <td><img src="/png/spacer.gif" width="1" height="55" border="0" alt=""></td>
+  </tr>
+  <tr>
+   <td><a href="/cake/help/page1/"><img name="menu_r5_c1" src="/png/menu_r5_c1.png" width="320" height="55" border="0" alt=""></a></td>
+   <td><img src="/png/spacer.gif" width="1" height="55" border="0" alt=""></td>
+  </tr>
+  <tr>
+   <td><a href="javascript:void(0)" onClick="invite_page(); return false;"><img name="menu_r6_c1" src="/png/menu_r6_c1.png" width="320" height="55" border="0" alt=""></a></td>
+   <td><img src="/png/spacer.gif" width="1" height="55" border="0" alt=""></td>
+  </tr>
+  <tr>
+   <td><img name="menu_r7_c1" src="/png/menu_r7_c1.png" width="320" height="134" border="0" alt=""></td>
+   <td><img src="/png/spacer.gif" width="1" height="134" border="0" alt=""></td>
+  </tr>
+</table>
+
+
+<script type="text/javascript" charset="UTF-8" src="http://static.mixi.jp/js/application/touch.js"></script>
+<script type="text/javascript">
+function invite_page(){
+  opensocial.requestShareApp("VIEWER_FRIENDS", null, function(response) {
+    if (response.hadError()) {
+      var errCode = response.getErrorCode();
+      // do something...
+    } else {
+      // do something...
+    }
+  });
+}
+</script>
+<script type="text/javascript">
+  var oSearch = new CLocationSearch(location.search);
+  //window.alert(oSearch.item('opensocial_owner_id'));
+  var str_id = '<input type="hidden" name="id" value="' + oSearch.item('opensocial_owner_id') + '" />';
+  document.getElementById("div_str_id").innerHTML = str_id;
+  var str_name = '<input type="hidden" name="name" value="" />';
+  document.getElementById("div_str_name").innerHTML = str_name;
+  var str_thumbnail = '<input type="hidden" name="thumbnail" value="" />';
+  document.getElementById("div_str_thumbnail").innerHTML = str_thumbnail;
+  function CLocationSearch(sSource) {
+    var sAry = new Array();
+    {
+      var nCur = 0, nRet = 0;
+      var sSearch = sSource.substr(1);
+      var sName, sValue;
+
+      nRet = sSearch.indexOf('=', nCur)
+      while(nRet >= 0) {
+        sName = sSearch.substring(nCur, nRet);
+        nCur = nRet + 1;
+
+        nRet = sSearch.indexOf('&', nCur);
+        if (nRet == -1) nRet = sSearch.length + 1;
+        sValue = sSearch.substring(nCur, nRet);
+
+        sAry[sName] = sValue;
+
+        nCur = nRet + 1;
+        nRet = sSearch.indexOf('=', nCur);
+      }
+    }
+
+    this.valueOf = function () {
+      return sSource;
+    }
+
+    this.item = function (sVarname) {
+      try {
+        return sAry[sVarname];
+      } catch(e) {
+        return '';
+      }
+    }
+
+    this.length   = function () {
+      return sAry.length;
+    }
+
+    this.toString = function () {
+      return this.length + '';
+
+    }
+  }
+</script>

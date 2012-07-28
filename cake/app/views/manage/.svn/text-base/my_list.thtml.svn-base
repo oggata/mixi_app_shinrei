@@ -1,0 +1,32 @@
+<table width="310" height="225" border="0" bgcolor="#000000">
+  <tr>
+    <td height="33"><img name="photo_managed_r1_c1" src="/png/photo_managed_r1_c1.png" width="320" height="126" border="0" alt=""></td>
+  </tr>
+  <tr>
+    <td height="185"><?php echo $vlist ?>
+      <table width="310" border="0">
+<?php foreach($datas as $data): ?>
+      <tr>
+        <td width="241" height="79"><a href="/cake/detail/photo/<?php echo $data['Photo']['id'];?>"><img src="/img/my/<?php echo $data['Photo']['member_id'];?>/<?php echo $data['Photo']['name'];?>.jpg" width="230" border="0"></a><?php echo $data['Photo']['name']; ?></td>
+        <td width="59"><table width="76" border="0" cellpadding="0" cellspacing="0">
+            <!-- fwtable fwsrc="photo_managed.png" fwbase="photo_managed.png" fwstyle="Dreamweaver" fwdocid = "1710877241" fwnested="0" -->
+            <tr>
+              <td width="76" colspan="2"><a href="/cake/detail/photo/<?php echo $data['Photo']['id'];?>"><img name="photo_managed_r5_c4" src="/png/photo_managed_r5_c4.png" width="76" height="26" border="0" alt=""></a></td>
+            </tr>
+            <tr>
+              <td colspan="2"><a href="http://shinrei.blamestitch.com/php/download.php?file=/var/www/html/shinrei/cake/app/webroot/img/my/<?php echo $data['Photo']['member_id'];?>/<?php echo $data['Photo']['name'];?>.jpg"><img name="photo_managed_r6_c4" src="/png/photo_managed_r6_c4.png" width="76" height="26" border="0" alt=""></a></td>
+            </tr>
+            <tr>
+              <td colspan="2"><a href="/cake/manage/remove_storage_confirm/<?php echo $data['Photo']['name'];?>"><img name="photo_managed_r7_c4" src="/png/photo_managed_r7_c4.png" width="76" height="26" border="0" alt=""></a></td>
+            </tr>
+          </table></td>
+      </tr>
+      <tr>
+        <td height="80" colspan="2"><hr></td>
+        </tr>
+<?php endforeach; ?>
+    </table></td>
+  </tr>
+</table>
+<p>&nbsp;</p>
+<p>&nbsp;</p>

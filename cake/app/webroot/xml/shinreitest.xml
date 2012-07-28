@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Module>
+<ModulePrefs title="Hello">
+<Require feature="dynamic-height"/>
+<Require feature="opensocial-0.8"/>
+</ModulePrefs>
+<Content type="url" view="touch" href="http://shinrei.blamestitch.com/cake/app/webroot/touch/touch.html" />
+<Content type="url" view="mobile" href="http://shinrei.blamestitch.com/cake/app/webroot/touch/touch.html" />
+<Content type="html"><![CDATA[
+
+
+<script type="text/javascript">
+var request = opensocial.newDataRequest();
+alert(request);
+</script>
+
+<iframe src="http://shinrei.blamestitch.com/cake/touch/index.html" name="sample" width="500" height="500">
+この部分はインラインフレームを使用しています。
+</iframe>
+
+
+
+
+]]></Content>
+</Module>

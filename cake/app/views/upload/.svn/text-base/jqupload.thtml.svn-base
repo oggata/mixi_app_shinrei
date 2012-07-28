@@ -1,0 +1,29 @@
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+
+
+
+
+
+
+
+<img src="<?php echo $img_url ?>" width="300">
+<?php echo $name; ?>
+<?php echo $id; ?>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa

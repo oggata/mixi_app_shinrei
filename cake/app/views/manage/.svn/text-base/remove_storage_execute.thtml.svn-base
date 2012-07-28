@@ -1,0 +1,15 @@
+<table width="310" height="126" border="0">
+  <tr>
+    <td>削除しました。</td>
+  </tr>
+  <tr>
+    <td><img src="<?php echo $remove_photo_url;?>" width="300"></td>
+  </tr>
+  <tr>
+    <td>つぶやく</td>
+  </tr>
+  <tr>
+    <td>リストをみる</td>
+  </tr>
+</table>
+

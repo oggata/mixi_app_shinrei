@@ -1,0 +1,504 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Module>
+<ModulePrefs title="Hello">
+<Require feature="dynamic-height"/>
+<Require feature="opensocial-0.8"/>
+<Require feature="flash" />
+</ModulePrefs>
+<Content type="html"><![CDATA[
+<!--ＣＳＳ開始-->
+<STYLE type="text/css">
+.fixinline {
+    display:-moz-inline-box;
+    -moz-box-align: center;
+    display: inline-block;
+    vertical-align: middle;
+    width:90px;
+}
+.thumimg {
+    margin: 0px;
+    vertical-align: middle;
+}
+</STYLE>
+<!--ＣＳＳ終了-->
+
+<!--ヘッダフレーム開始-->
+<table border="0" cellpadding="0" cellspacing="0" width="755">
+<!-- fwtable fwsrc="http://mixiapp.blamestitch.com/jpg/gameprofiles.png" fwbase="gameprofiles.gif" fwstyle="Dreamweaver" fwdocid = "397735646" fwnested="0" -->
+  <tr>
+   <td><img src="http://mixiapp.blamestitch.com/jpg/spacer.gif" width="1" height="1" border="0" alt=""></td>
+   <td><img src="http://mixiapp.blamestitch.com/jpg/spacer.gif" width="13" height="1" border="0" alt=""></td>
+   <td><img src="http://mixiapp.blamestitch.com/jpg/spacer.gif" width="75" height="1" border="0" alt=""></td>
+   <td><img src="http://mixiapp.blamestitch.com/jpg/spacer.gif" width="46" height="1" border="0" alt=""></td>
+   <td><img src="http://mixiapp.blamestitch.com/jpg/spacer.gif" width="7" height="1" border="0" alt=""></td>
+   <td><img src="http://mixiapp.blamestitch.com/jpg/spacer.gif" width="3" height="1" border="0" alt=""></td>
+   <td><img src="http://mixiapp.blamestitch.com/jpg/spacer.gif" width="29" height="1" border="0" alt=""></td>
+   <td><img src="http://mixiapp.blamestitch.com/jpg/spacer.gif" width="102" height="1" border="0" alt=""></td>
+   <td><img src="http://mixiapp.blamestitch.com/jpg/spacer.gif" width="5" height="1" border="0" alt=""></td>
+   <td><img src="http://mixiapp.blamestitch.com/jpg/spacer.gif" width="134" height="1" border="0" alt=""></td>
+   <td><img src="http://mixiapp.blamestitch.com/jpg/spacer.gif" width="122" height="1" border="0" alt=""></td>
+   <td><img src="http://mixiapp.blamestitch.com/jpg/spacer.gif" width="9" height="1" border="0" alt=""></td>
+   <td><img src="http://mixiapp.blamestitch.com/jpg/spacer.gif" width="202" height="1" border="0" alt=""></td>
+   <td><img src="http://mixiapp.blamestitch.com/jpg/spacer.gif" width="7" height="1" border="0" alt=""></td>
+   <td><img src="http://mixiapp.blamestitch.com/jpg/spacer.gif" width="1" height="1" border="0" alt=""></td>
+  </tr>
+
+  <tr>
+   <td colspan="14" bgcolor="#EEEEEE"><img name="gameprofiles_r1_c1" src="http://mixiapp.blamestitch.com/jpg/gameprofiles_r1_c1.gif" width="755" height="10" border="0" alt=""></td>
+   <td><img src="http://mixiapp.blamestitch.com/jpg/spacer.gif" width="1" height="10" border="0" alt=""></td>
+  </tr>
+  <tr>
+   <td colspan="2" rowspan="6" bgcolor="#EEEEEE"><img name="gameprofiles_r2_c1" src="http://mixiapp.blamestitch.com/jpg/gameprofiles_r2_c1.gif" width="14" height="92" border="0" alt=""></td>
+   <td rowspan="5" bgcolor="#EEEEEE"><span id="THUMBNAIL_URL"></span></td>
+   <td colspan="3" rowspan="6" bgcolor="#EEEEEE"><img name="gameprofiles_r2_c4" src="http://mixiapp.blamestitch.com/jpg/gameprofiles_r2_c4.gif" width="56" height="92" border="0" alt=""></td>
+   <td colspan="5" bgcolor="#EEEEEE"><span id="NICKNAME"></span></td>
+   <td rowspan="8" bgcolor="#EEEEEE"><img name="gameprofiles_r2_c12" src="http://mixiapp.blamestitch.com/jpg/gameprofiles_r2_c12.gif" width="9" height="116" border="0" alt=""></td>
+   <td rowspan="7" bgcolor="#EEEEEE"><img name="gameprofiles_r2_c13" src="http://mixiapp.blamestitch.com/jpg/gameprofiles_r2_c13.gif" width="202" height="110" border="0" alt=""></td>
+   <td rowspan="8" bgcolor="#EEEEEE"><img name="gameprofiles_r2_c14" src="http://mixiapp.blamestitch.com/jpg/gameprofiles_r2_c14.gif" width="7" height="116" border="0" alt=""></td>
+   <td><img src="http://mixiapp.blamestitch.com/jpg/spacer.gif" width="1" height="22" border="0" alt=""></td>
+  </tr>
+  <tr>
+   <td colspan="5" bgcolor="#EEEEEE"><img name="gameprofiles_r3_c7" src="http://mixiapp.blamestitch.com/jpg/gameprofiles_r3_c7.gif" width="392" height="5" border="0" alt=""></td>
+   <td><img src="http://mixiapp.blamestitch.com/jpg/spacer.gif" width="1" height="5" border="0" alt=""></td>
+  </tr>
+  <tr>
+   <td rowspan="4" bgcolor="#EEEEEE"><img name="gameprofiles_r4_c7" src="http://mixiapp.blamestitch.com/jpg/gameprofiles_r4_c7.gif" width="29" height="65" border="0" alt=""></td>
+   <td colspan="4" bgcolor="#EEEEEE"><span id="MY_RANK"></span></td>
+   <td><img src="http://mixiapp.blamestitch.com/jpg/spacer.gif" width="1" height="21" border="0" alt=""></td>
+  </tr>
+  <tr>
+   <td colspan="4" bgcolor="#EEEEEE"><img name="gameprofiles_r5_c8" src="http://mixiapp.blamestitch.com/jpg/gameprofiles_r5_c8.gif" width="363" height="6" border="0" alt=""></td>
+   <td><img src="http://mixiapp.blamestitch.com/jpg/spacer.gif" width="1" height="6" border="0" alt=""></td>
+  </tr>
+  <tr>
+   <td colspan="4" bgcolor="#EEEEEE"><span id="MY_SCORE"></span></td>
+   <td><img src="http://mixiapp.blamestitch.com/jpg/spacer.gif" width="1" height="21" border="0" alt=""></td>
+  </tr>
+  <tr>
+   <td bgcolor="#EEEEEE"><img name="gameprofiles_r7_c3" src="http://mixiapp.blamestitch.com/jpg/gameprofiles_r7_c3.gif" width="75" height="17" border="0" alt=""></td>
+   <td colspan="4" bgcolor="#EEEEEE"><img name="gameprofiles_r7_c8" src="http://mixiapp.blamestitch.com/jpg/gameprofiles_r7_c8.gif" width="363" height="17" border="0" alt=""></td>
+   <td><img src="http://mixiapp.blamestitch.com/jpg/spacer.gif" width="1" height="17" border="0" alt=""></td>
+  </tr>
+  <tr>
+   <td rowspan="2" bgcolor="#EEEEEE"><img name="gameprofiles_r8_c1" src="http://mixiapp.blamestitch.com/jpg/gameprofiles_r8_c1.gif" width="1" height="24" border="0" alt=""></td>
+   <td colspan="3" rowspan="2" bgcolor="#EEEEEE"><div id="top_page"><img name="gameprofiles_r8_c2" src="http://mixiapp.blamestitch.com/jpg/gameprofiles_r8_c2.gif" width="134" height="24" border="0" alt=""></div></td>
+   <td rowspan="2" bgcolor="#EEEEEE"><img name="gameprofiles_r8_c5" src="http://mixiapp.blamestitch.com/jpg/gameprofiles_r8_c5.gif" width="7" height="24" border="0" alt=""></td>
+   <td colspan="3" rowspan="2" bgcolor="#EEEEEE"><div id="ranking_page"><img name="gameprofiles_r8_c6" src="http://mixiapp.blamestitch.com/jpg/gameprofiles_r8_c6.gif" width="134" height="24" border="0" alt=""></div></td>
+   <td rowspan="2" bgcolor="#EEEEEE"><img name="gameprofiles_r8_c9" src="http://mixiapp.blamestitch.com/jpg/gameprofiles_r8_c9.gif" width="5" height="24" border="0" alt=""></td>
+   <td rowspan="2" bgcolor="#EEEEEE"><div id="navi_invite"><img name="gameprofiles_r8_c10" src="http://mixiapp.blamestitch.com/jpg/gameprofiles_r8_c10.gif" width="134" height="24" border="0" alt=""></div></td>
+   <td rowspan="2" bgcolor="#EEEEEE"><img name="gameprofiles_r8_c11" src="http://mixiapp.blamestitch.com/jpg/gameprofiles_r8_c11.gif" width="122" height="24" border="0" alt=""></td>
+   <td><img src="http://mixiapp.blamestitch.com/jpg/spacer.gif" width="1" height="18" border="0" alt=""></td>
+  </tr>
+  <tr>
+   <td bgcolor="#EEEEEE"><img name="gameprofiles_r9_c13" src="http://mixiapp.blamestitch.com/jpg/gameprofiles_r9_c13.gif" width="202" height="6" border="0" alt=""></td>
+   <td><img src="http://mixiapp.blamestitch.com/jpg/spacer.gif" width="1" height="6" border="0" alt=""></td>
+  </tr>
+  <tr>
+   <td colspan="14"><img name="gameprofiles_r10_c1" src="http://mixiapp.blamestitch.com/jpg/gameprofiles_r10_c1.gif" width="755" height="4" border="0" alt=""></td>
+   <td><img src="http://mixiapp.blamestitch.com/jpg/spacer.gif" width="1" height="4" border="0" alt=""></td>
+  </tr>
+</table>
+<!--ヘッダフレーム終了---->
+
+
+<!--Flashフレーム開始---->
+<div id="externalContainer"></div>
+<!--Flashフレーム終了---->
+
+<!--ランキング表示開始---->
+<div id="datalist"></div>
+<!--ランキング表示終了---->
+
+<!--フッタフレーム開始---->
+<table border="0" cellpadding="0" cellspacing="0" width="755">
+<!-- fwtable fwsrc="http://mixiapp.blamestitch.com/jpg/applist2.png" fwbase="applist2.gif" fwstyle="Dreamweaver" fwdocid = "1199687636" fwnested="0" -->
+  <tr>
+   <td><img src="http://mixiapp.blamestitch.com/jpg/spacer.gif" width="16" height="1" border="0" alt=""></td>
+   <td><img src="http://mixiapp.blamestitch.com/jpg/spacer.gif" width="78" height="1" border="0" alt=""></td>
+   <td><img src="http://mixiapp.blamestitch.com/jpg/spacer.gif" width="14" height="1" border="0" alt=""></td>
+   <td><img src="http://mixiapp.blamestitch.com/jpg/spacer.gif" width="78" height="1" border="0" alt=""></td>
+   <td><img src="http://mixiapp.blamestitch.com/jpg/spacer.gif" width="14" height="1" border="0" alt=""></td>
+   <td><img src="http://mixiapp.blamestitch.com/jpg/spacer.gif" width="78" height="1" border="0" alt=""></td>
+   <td><img src="http://mixiapp.blamestitch.com/jpg/spacer.gif" width="14" height="1" border="0" alt=""></td>
+   <td><img src="http://mixiapp.blamestitch.com/jpg/spacer.gif" width="78" height="1" border="0" alt=""></td>
+   <td><img src="http://mixiapp.blamestitch.com/jpg/spacer.gif" width="14" height="1" border="0" alt=""></td>
+   <td><img src="http://mixiapp.blamestitch.com/jpg/spacer.gif" width="78" height="1" border="0" alt=""></td>
+   <td><img src="http://mixiapp.blamestitch.com/jpg/spacer.gif" width="14" height="1" border="0" alt=""></td>
+   <td><img src="http://mixiapp.blamestitch.com/jpg/spacer.gif" width="78" height="1" border="0" alt=""></td>
+   <td><img src="http://mixiapp.blamestitch.com/jpg/spacer.gif" width="14" height="1" border="0" alt=""></td>
+   <td><img src="http://mixiapp.blamestitch.com/jpg/spacer.gif" width="78" height="1" border="0" alt=""></td>
+   <td><img src="http://mixiapp.blamestitch.com/jpg/spacer.gif" width="14" height="1" border="0" alt=""></td>
+   <td><img src="http://mixiapp.blamestitch.com/jpg/spacer.gif" width="78" height="1" border="0" alt=""></td>
+   <td><img src="http://mixiapp.blamestitch.com/jpg/spacer.gif" width="17" height="1" border="0" alt=""></td>
+   <td><img src="http://mixiapp.blamestitch.com/jpg/spacer.gif" width="1" height="1" border="0" alt=""></td>
+  </tr>
+
+  <tr>
+   <td colspan="17"><img name="applist2_r1_c1" src="http://mixiapp.blamestitch.com/jpg/applist2_r1_c1.gif" width="755" height="60" border="0" alt=""></td>
+   <td><img src="http://mixiapp.blamestitch.com/jpg/spacer.gif" width="1" height="60" border="0" alt=""></td>
+  </tr>
+  <tr>
+   <td rowspan="3"><img name="applist2_r2_c1" src="http://mixiapp.blamestitch.com/jpg/applist2_r2_c1.gif" width="16" height="169" border="0" alt=""></td>
+   <td><a href="http://mixi.jp/run_appli.pl?id=17421" target="_blank"><img name="applist2_r2_c2" src="http://mixiapp.blamestitch.com/jpg/applist2_r2_c2.gif" width="78" height="78" border="0" alt=""></a></td>
+   <td rowspan="3"><img name="applist2_r2_c3" src="http://mixiapp.blamestitch.com/jpg/applist2_r2_c3.gif" width="14" height="169" border="0" alt=""></td>
+   <td><a href="http://mixi.jp/run_appli.pl?id=19303" target="_blank"><img name="applist2_r2_c4" src="http://mixiapp.blamestitch.com/jpg/applist2_r2_c4.gif" width="78" height="78" border="0" alt=""></a></td>
+   <td rowspan="3"><img name="applist2_r2_c5" src="http://mixiapp.blamestitch.com/jpg/applist2_r2_c5.gif" width="14" height="169" border="0" alt=""></td>
+   <td><img name="applist2_r2_c6" src="http://mixiapp.blamestitch.com/jpg/applist2_r2_c6.gif" width="78" height="78" border="0" alt=""></td>
+   <td rowspan="3"><img name="applist2_r2_c7" src="http://mixiapp.blamestitch.com/jpg/applist2_r2_c7.gif" width="14" height="169" border="0" alt=""></td>
+   <td><img name="applist2_r2_c8" src="http://mixiapp.blamestitch.com/jpg/applist2_r2_c8.gif" width="78" height="78" border="0" alt=""></td>
+   <td rowspan="3"><img name="applist2_r2_c9" src="http://mixiapp.blamestitch.com/jpg/applist2_r2_c9.gif" width="14" height="169" border="0" alt=""></td>
+   <td><img name="applist2_r2_c10" src="http://mixiapp.blamestitch.com/jpg/applist2_r2_c10.gif" width="78" height="78" border="0" alt=""></td>
+   <td rowspan="3"><img name="applist2_r2_c11" src="http://mixiapp.blamestitch.com/jpg/applist2_r2_c11.gif" width="14" height="169" border="0" alt=""></td>
+   <td><img name="applist2_r2_c12" src="http://mixiapp.blamestitch.com/jpg/applist2_r2_c12.gif" width="78" height="78" border="0" alt=""></td>
+   <td rowspan="3"><img name="applist2_r2_c13" src="http://mixiapp.blamestitch.com/jpg/applist2_r2_c13.gif" width="14" height="169" border="0" alt=""></td>
+   <td><img name="applist2_r2_c14" src="http://mixiapp.blamestitch.com/jpg/applist2_r2_c14.gif" width="78" height="78" border="0" alt=""></td>
+   <td rowspan="3"><img name="applist2_r2_c15" src="http://mixiapp.blamestitch.com/jpg/applist2_r2_c15.gif" width="14" height="169" border="0" alt=""></td>
+   <td><img name="applist2_r2_c16" src="http://mixiapp.blamestitch.com/jpg/applist2_r2_c16.gif" width="78" height="78" border="0" alt=""></td>
+   <td rowspan="3"><img name="applist2_r2_c17" src="http://mixiapp.blamestitch.com/jpg/applist2_r2_c17.gif" width="17" height="169" border="0" alt=""></td>
+   <td><img src="http://mixiapp.blamestitch.com/jpg/spacer.gif" width="1" height="78" border="0" alt=""></td>
+  </tr>
+  <tr>
+   <td><img name="applist2_r3_c2" src="http://mixiapp.blamestitch.com/jpg/applist2_r3_c2.gif" width="78" height="13" border="0" alt=""></td>
+   <td><img name="applist2_r3_c4" src="http://mixiapp.blamestitch.com/jpg/applist2_r3_c4.gif" width="78" height="13" border="0" alt=""></td>
+   <td><img name="applist2_r3_c6" src="http://mixiapp.blamestitch.com/jpg/applist2_r3_c6.gif" width="78" height="13" border="0" alt=""></td>
+   <td><img name="applist2_r3_c8" src="http://mixiapp.blamestitch.com/jpg/applist2_r3_c8.gif" width="78" height="13" border="0" alt=""></td>
+   <td><img name="applist2_r3_c10" src="http://mixiapp.blamestitch.com/jpg/applist2_r3_c10.gif" width="78" height="13" border="0" alt=""></td>
+   <td><img name="applist2_r3_c12" src="http://mixiapp.blamestitch.com/jpg/applist2_r3_c12.gif" width="78" height="13" border="0" alt=""></td>
+   <td><img name="applist2_r3_c14" src="http://mixiapp.blamestitch.com/jpg/applist2_r3_c14.gif" width="78" height="13" border="0" alt=""></td>
+   <td><img name="applist2_r3_c16" src="http://mixiapp.blamestitch.com/jpg/applist2_r3_c16.gif" width="78" height="13" border="0" alt=""></td>
+   <td><img src="http://mixiapp.blamestitch.com/jpg/spacer.gif" width="1" height="13" border="0" alt=""></td>
+  </tr>
+  <tr>
+   <td><img name="applist2_r4_c2" src="http://mixiapp.blamestitch.com/jpg/applist2_r4_c2.gif" width="78" height="78" border="0" alt=""></td>
+   <td><img name="applist2_r4_c4" src="http://mixiapp.blamestitch.com/jpg/applist2_r4_c4.gif" width="78" height="78" border="0" alt=""></td>
+   <td><img name="applist2_r4_c6" src="http://mixiapp.blamestitch.com/jpg/applist2_r4_c6.gif" width="78" height="78" border="0" alt=""></td>
+   <td><img name="applist2_r4_c8" src="http://mixiapp.blamestitch.com/jpg/applist2_r4_c8.gif" width="78" height="78" border="0" alt=""></td>
+   <td><img name="applist2_r4_c10" src="http://mixiapp.blamestitch.com/jpg/applist2_r4_c10.gif" width="78" height="78" border="0" alt=""></td>
+   <td><img name="applist2_r4_c12" src="http://mixiapp.blamestitch.com/jpg/applist2_r4_c12.gif" width="78" height="78" border="0" alt=""></td>
+   <td><img name="applist2_r4_c14" src="http://mixiapp.blamestitch.com/jpg/applist2_r4_c14.gif" width="78" height="78" border="0" alt=""></td>
+   <td><img name="applist2_r4_c16" src="http://mixiapp.blamestitch.com/jpg/applist2_r4_c16.gif" width="78" height="78" border="0" alt=""></td>
+   <td><img src="http://mixiapp.blamestitch.com/jpg/spacer.gif" width="1" height="78" border="0" alt=""></td>
+  </tr>
+  <tr>
+   <td colspan="17"><img name="applist2_r5_c1" src="http://mixiapp.blamestitch.com/jpg/applist2_r5_c1.gif" width="755" height="21" border="0" alt=""></td>
+   <td><img src="http://mixiapp.blamestitch.com/jpg/spacer.gif" width="1" height="21" border="0" alt=""></td>
+  </tr>
+</table>
+<!--フッタフレーム終了---->
+
+
+<!--デフォルト設定開始-->
+<script type="text/javascript">
+	//最初にＦＬＡＳＨを表示する
+	gametop();
+
+	//クリックでトップページ（flash）へ遷移する
+	document.getElementById("top_page").onclick = function(evt) {
+		delete_rankinglist();
+		view_flash();
+	}
+
+	//FLASHを表示する
+	function gametop(){
+		gadgets.util.registerOnLoadHandler(view_flash);
+	}
+
+	//FLASHを削除する
+	function delete_flash(){
+		document.getElementById("externalContainer").innerHTML = '';
+	}
+
+	//クリックでランキングを表示する
+	document.getElementById("ranking_page").onclick = function(evt) {
+		delete_flash();
+		rankinglist();
+	}
+
+	//ランキングを削除する
+	function delete_rankinglist(){
+		document.getElementById("datalist").innerHTML = '';
+	}
+
+	//マイミクを招待する
+	document.getElementById("navi_invite").onclick = function(evt) {
+		opensocial.requestShareApp(opensocial.IdSpec.PersonId.VIEWER, null, function(response) {
+		});
+	}
+
+	//縦幅の設定
+	var tid=setTimeout("heightset()",1000);
+	function heightset(){
+		//得点ＤＢを作成する
+		checkaccount();
+		//ランキング情報などを取得する
+		my_ranking();
+		//高さの調整を行なう
+		gadgets.window.adjustHeight();
+	}
+
+	//FLASHを表示する
+	function view_flash(){
+		gadgets.flash.embedFlash("http://mixiapp.blamestitch.com/flash/balloon.swf", "externalContainer", "9.0.0",
+	  		{
+		 	width : 755,
+		 	height : 600,
+		 	quality : 'high',
+		 	id : 'aexternal',
+		 	wmode : 'transparent',
+		 	allowScriptAccess : 'always'
+	   		}
+ 		);
+	}
+
+	var viewer = new Object(); // globalで必要な変数を宣言
+	var flashtxt = new Object(); // globalで必要な変数を宣言 flashに値を渡す
+
+	//プロフィール情報を取得するためのメソッド
+	function get_viewer_profile() {
+		var request = opensocial.newDataRequest();
+		request.add(request.newFetchPersonRequest(opensocial.IdSpec.PersonId.VIEWER), "viewer_data");
+
+		request.send(
+			function (response) {
+				var item = response.get("viewer_data");
+				if (item.hadError()) {
+					// エラー処理。item.getError() で詳細情報を取得
+					return;
+				 }
+
+				// 実行ユーザのプロフィールを参照
+				var person = item.getData();
+
+				viewer.memberid = person.getField(opensocial.Person.Field.ID); // ID
+				viewer.nickname = person.getField(opensocial.Person.Field.NICKNAME); // ニックネーム
+				viewer.sumnail = person.getField(opensocial.Person.Field.THUMBNAIL_URL);//サムネイル
+
+				//上部ヘッダーに表示する
+				document.getElementById("NICKNAME").innerHTML = viewer.nickname;
+				document.getElementById("THUMBNAIL_URL").innerHTML = "<img src='" + viewer.sumnail + "' class='thumimg'>";
+				document.getElementById("mixiname").innerHTML = viewer.sumnail;
+			}
+		);
+	}
+
+	//プロフィール情報の取得
+	gadgets.util.registerOnLoadHandler(get_viewer_profile);
+</script>
+<!--デフォルト設定終了-->
+
+<!--ランキング設定開始-->
+<script type="text/javascript">
+	//コールバック関数
+	function my_ranking_callback(response) {
+		var dom = response.data;
+		//最高得点を取得
+		var max_count = dom.getElementsByTagName("max_count");
+		var all_count = dom.getElementsByTagName("all_count");
+		var ranking_max_1 = dom.getElementsByTagName("ranking_max_1");
+		var ranking_all_1 = dom.getElementsByTagName("ranking_all_1");
+		var all_data_count_1 = dom.getElementsByTagName("all_data_count_1");
+
+		//得点を表示する
+		document.getElementById("MY_SCORE").innerHTML = max_count[0].firstChild.nodeValue + "point";
+		//ランキングを表示する
+		document.getElementById("MY_RANK").innerHTML = ranking_max_1[0].firstChild.nodeValue + " / " + all_data_count_1[0].firstChild.nodeValue;
+		//flashtxt.data = response.data;
+	}
+
+	//現在のランキングと得点を解析する
+	//my_ranking();
+
+	function my_ranking(){
+		//XMLを取得する元
+		var url = "http://mixiapp.blamestitch.com/cake/balloon/return_my_score/id:" + viewer.memberid + "/category:1/";
+		var params = {};
+		//HTTPメソッドの指定
+		//params[gadgets.io.RequestParameters.METHOD] = gadgets.io.MethodType.GET;
+		//外部サーバから得られるコンテンツの期待する形式
+		params[gadgets.io.RequestParameters.CONTENT_TYPE] = gadgets.io.ContentType.DOM;
+		//キャッシュする時間を設定する
+		params[gadgets.io.RequestParameters.REFRESH_INTERVAL] = 0;
+		//署名を付与しない
+		params[gadgets.io.RequestParameters.AUTHORIZATION] = gadgets.io.AuthorizationType.NONE;
+		//リクエストを送信する
+		gadgets.io.makeRequest(url,my_ranking_callback,params);
+	}
+
+
+	//ランキングリスト
+	function rankinglist(){
+		//XMLを取得する元
+		var url = "http://mixiapp.blamestitch.com/balloon/returnxml";
+		var params = {};
+		//params[gadgets.io.RequestParameters.METHOD] = gadgets.io.MethodType.GET;
+
+		//期待するコンテンツは XML ファイル
+		params[gadgets.io.RequestParameters.CONTENT_TYPE] = gadgets.io.ContentType.DOM;
+
+		//キャッシュする時間を設定する
+		params[gadgets.io.RequestParameters.REFRESH_INTERVAL] = 0;
+
+		//署名は付与しない NONE
+		params[gadgets.io.RequestParameters.AUTHORIZATION] = gadgets.io.AuthorizationType.NONE;
+
+		gadgets.io.makeRequest(url, function(response) {
+
+			var dom = response.data;
+
+			//XML内の"mixi_account_name"という名前のタグ(要素)の配列を作る
+			var mixi_account_name = dom.getElementsByTagName("mixi_account_name")
+
+			//XML内の"max_count"という名前のタグ(要素)の配列を作る
+			var max_count = dom.getElementsByTagName("max_count")
+
+			//XML内の"all_count"という名前のタグ(要素)の配列を作る
+			var all_count = dom.getElementsByTagName("all_count")
+
+			//XML内の"game_count"という名前のタグ(要素)の配列を作る
+			var game_count = dom.getElementsByTagName("game_count")
+
+			//XML内の"score"という名前のタグ(要素)の配列を作る
+			var scores = dom.getElementsByTagName("score");
+
+
+			//tableタグを作成
+			html  = '上位500人を表示中';
+			html += '<table width="940" border="0" id="table-01" class="sortable"><thead><tr>';
+			html += '<th class="nosort">ランク</th><th>名前</th><th>最大得点</th><th>累計得点</th><th>挑戦回数</th>';
+			html += '</tr></thead><tbody>';
+
+			for (var i=0; i<scores.length; i++){
+				var rank = i + 1;
+				html += '<tr><td>' + rank + '</td>';
+         		html += '<td>' + mixi_account_name[i].firstChild.nodeValue + '</td>';
+        		html += '<td>' + max_count[i].firstChild.nodeValue + '</td>';
+        		html += '<td>' + all_count[i].firstChild.nodeValue + '</td>';
+        		html += '<td>' + game_count[i].firstChild.nodeValue + '</td>';
+          		html += '</tr>';
+ 			}
+
+			html += '</tbody></table>';
+
+			//divを置き換え
+			document.getElementById("datalist").innerHTML = html;
+
+		}, params);
+	}
+</script>
+<!--ランキング設定終了-->
+
+<!--Flashの通信用開始-->
+<script type="text/javascript">
+	//アクティビティを送信するためのメソッド
+	function sendActivity(score){
+		var params = {};
+		params[opensocial.Activity.Field.TITLE] = viewer.nickname + "さんが" + score + "点です";
+		var activity = opensocial.newActivity(params);
+
+		opensocial.requestCreateActivity(
+		activity, opensocial.CreateActivityPriority.HIGH, function(response) {
+		  if (response.hadError()) {
+		    var code = response.getErrorCode();
+		    test = test + 1;
+		    // do something...
+			//alert("1do something...");
+		  } else {
+		  	test = test + 1;
+		    // do something...
+		    //alert("2do something...");
+		  }
+		});
+	}
+
+	//初回にゲーム保存データを作成するメソッド
+	function checkaccount(){
+		//ニックネームはURLエンコードをかけないと渡らない
+		var EncStr = encodeURI( viewer.nickname );
+		var url = "http://mixiapp.blamestitch.com/balloon/check_account/name:" + EncStr + "/id:" + viewer.memberid + "/category:1/";
+		var params = {};
+		//HTTPメソッドの指定
+		params[gadgets.io.RequestParameters.METHOD] = gadgets.io.MethodType.POST;
+		//外部サーバから得られるコンテンツの期待する形式
+		params[gadgets.io.RequestParameters.CONTENT_TYPE] = gadgets.io.ContentType.FEED;
+		var post_data = {span : 7};
+		params[gadgets.io.RequestParameters.POST_DATA] = gadgets.io.encodeValues(post_data);
+		//署名を付与しない
+		params[gadgets.io.RequestParameters.AUTHORIZATION] = gadgets.io.AuthorizationType.NONE;
+
+		gadgets.io.makeRequest(url,callback,params);
+	}
+
+
+	//得点を保存するためのメソッド
+	function savedatascore(score){
+		//alert("score...");
+		//ニックネームはURLエンコードをかけないと渡らない
+		var EncStr = encodeURI( viewer.nickname );
+		var url = "http://mixiapp.blamestitch.com/balloon/insert_score/id:" + viewer.memberid + "/score:" + score + "/category:1/";
+
+		var params = {};
+		//HTTPメソッドの指定
+		params[gadgets.io.RequestParameters.METHOD] = gadgets.io.MethodType.POST;
+		//外部サーバから得られるコンテンツの期待する形式
+		params[gadgets.io.RequestParameters.CONTENT_TYPE] = gadgets.io.ContentType.FEED;
+		var post_data = {span : 7};
+		params[gadgets.io.RequestParameters.POST_DATA] = gadgets.io.encodeValues(post_data);
+		//署名を付与しない
+		params[gadgets.io.RequestParameters.AUTHORIZATION] = gadgets.io.AuthorizationType.NONE;
+
+		gadgets.io.makeRequest(url,callback,params);
+	}
+
+
+	//コールバック関数
+	function callback(){
+	}
+
+	//コールバック関数
+	function callback2(response) {
+		 var feed = response.data;
+		 flashtxt.data = response.data;
+	}
+
+	//コールバック関数
+	function callback3(){
+		return flashtxt.data;
+	}
+
+	//これまでの得点を取得するメソッド
+	function getResultHtml(){
+		var EncStr = encodeURI( viewer.nickname );
+		var url = "http://mixiapp.blamestitch.com/cake/balloon/return_score/id:" + viewer.memberid + "/category:1/";
+		var params = {};
+		//HTTPメソッドの指定
+		params[gadgets.io.RequestParameters.METHOD] = gadgets.io.MethodType.POST;
+		//外部サーバから得られるコンテンツの期待する形式
+		params[gadgets.io.RequestParameters.CONTENT_TYPE] = gadgets.io.ContentType.TEXT;
+		var post_data = {span : 7};
+		params[gadgets.io.RequestParameters.POST_DATA] = gadgets.io.encodeValues(post_data);
+		//署名を付与しない
+		params[gadgets.io.RequestParameters.AUTHORIZATION] = gadgets.io.AuthorizationType.NONE;
+		//リクエストを送信する
+		gadgets.io.makeRequest(url,callback2,params);
+	}
+</script>
+<!--Flashの通信用終了-->
+
+
+
+<table width="755" border="0" bordercolor="#ECE9D8" bgcolor="#ECE9D8">
+  <tr>
+    <td bgcolor="#CCCCCC">&nbsp;</td>
+  </tr>
+</table>
+
+
+
+
+
+
+
+
+
+]]></Content>
+</Module>

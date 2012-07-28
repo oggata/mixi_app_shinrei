@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/repos/shinrei/!svn/ver/17/trunk/app/views/manage
+END
+photo_list.thtml
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/repos/shinrei/!svn/ver/4/trunk/app/views/manage/photo_list.thtml
+END
+remove_storage_confirm.thtml
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/repos/shinrei/!svn/ver/4/trunk/app/views/manage/remove_storage_confirm.thtml
+END
+save_storage.thtml
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/repos/shinrei/!svn/ver/17/trunk/app/views/manage/save_storage.thtml
+END
+remove_storage_execute.thtml
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/repos/shinrei/!svn/ver/4/trunk/app/views/manage/remove_storage_execute.thtml
+END
+my_list.thtml
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/repos/shinrei/!svn/ver/17/trunk/app/views/manage/my_list.thtml
+END

@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Module>
+<ModulePrefs title="Hello">
+<Require feature="dynamic-height"/>
+<Require feature="opensocial-0.8"/>
+</ModulePrefs>
+<Content type="url" view="touch" href="http://shinrei.blamestitch.com/cake/app/webroot/touch/touch.html" />
+<Content type="url" view="mobile" href="http://shinrei.blamestitch.com/cake/app/webroot/touch/touch.html" />
+<Content type="html"><![CDATA[
+
+
+<script type="text/javascript">
+function echoaaa(){
+alert('aaaa');
+}
+</script>
+
+<!doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>jQT.Floaty</title>
+    <style type="text/css" media="screen">@import "http://shinrei.blamestitch.com/jqtouch/jqtouch/jqtouch.css";</style>
+    <style type="text/css" media="screen">@import "http://shinrei.blamestitch.com/jqtouch/themes/jqt/theme.css";</style>
+    <script src="http://shinrei.blamestitch.com/jqtouch/jqtouch/jquery-1.4.2.js" type="text/javascript" charset="utf-8"></script>
+    <script src="http://shinrei.blamestitch.com/jqtouch/jqtouch/jqtouch.js" type="application/x-javascript" charset="utf-8"></script>
+    <script src="http://shinrei.blamestitch.com/jqtouch/extensions/jqt.autotitles.js" type="application/x-javascript" charset="utf-8"></script>
+
+        <script type="text/javascript" charset="utf-8">
+            var jQT = new $.jQTouch({
+                icon: 'jqtouch.png',
+                addGlossToIcon: false,
+                startupScreen: 'jqt_startup.png',
+                statusBar: 'black'
+            });
+        </script>
+    </head>
+    <body>
+        <div id="jqt">
+            <div id="page1">
+                <div class="toolbar">
+                    <h1>Auto Titles</h1>
+                </div>
+                <ul class="edgetoedge">
+                    <li><a href="#page2" onClick="echoaaa()" ontouchend="echoaaa()">Oranges</a></li>
+                    <li><a href="#page2">Bananas</a></li>
+                    <li><a href="#page2">Apples</a></li>
+                    <li><a href="#page_form">Form</a></li>
+                    <li><a href="#page_upload" onClick="upload_photo()" ontouchend="upload_photo()">upload</a></li>
+                </ul>
+            </div>
+            <div id="page2">
+                <div class="toolbar">
+                    <a href="#" class="back">back</a>
+                    <h1>[Fruit Name]</h1>
+                </div>
+                <div class="info">
+                    The title for this page was automatically set from it&#8217;s referring link, no extra scripts required. Just include the extension and this happens.
+                </div>
+            </div>
+
+            <div id="page_form">
+                <div class="toolbar">
+                    <a href="#" class="back">back</a>
+                    <h1>[FormPage]</h1>
+                </div>
+                <div class="info">
+                    this page is form page.
+                   <form action="http://shinrei.blamestitch.com/post.php" method="POST">
+                     <ul class="form">
+                     <input name='data[Upload][photo]' type='file' size="30"/>
+                     </ul>
+                     <a style="margin:0 10px 10px 10px;color:rgba(0,0,0,.9)" href="#" class="submit whiteButton">Submit</a>
+                  </form>
+                </div>
+            </div>
+
+            <div id="page_upload">
+                <script type="text/javascript">
+                  //upload_photo();
+                  alert('aaa');
+                </script>
+
+                <a href="#" class="back">back</a>
+                <h1>[UploadPage]</h1>
+                <div class="info">
+                    this page is upload page.
+                </div>
+            </div>
+
+        </div>
+    </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div id="div_str_id"></div>
+<div id="div_str_name"></div>
+<div id="div_str_thumbnail"></div>
+
+<!--デフォルト設定開始-->
+<script type="text/javascript">
+  //縦幅の設定
+  var tid=setTimeout("heightset()",1500);
+  function heightset(){
+    //高さの調整を行なう
+    gadgets.window.adjustHeight();
+  }
+
+
+  var viewer = new Object(); // globalで必要な変数を宣言
+  var flashtxt = new Object(); // globalで必要な変数を宣言 flashに値を渡す
+
+  //プロフィール情報を取得するためのメソッド
+  function get_viewer_profile() {
+    var request = opensocial.newDataRequest();
+    request.add(request.newFetchPersonRequest(opensocial.IdSpec.PersonId.VIEWER), "viewer_data");
+    request.send(
+      function (response) {
+        if(response.hadError()){
+          //読み込み不全エラー処理
+          //console.log("error");
+                    alert('mixiの情報取得に失敗しました。このページを再読み込みしてください。');
+        }else{
+          var item = response.get("viewer_data");
+          if (item.hadError()) {
+            // エラー処理。item.getError() で詳細情報を取得
+            return;
+          }
+
+          // 実行ユーザのプロフィールを参照
+          var person = item.getData();
+
+          //実行ユーザーがオーナーでない場合、登録画面にリダイレクトする
+          if (!person.isOwner()){
+            //location.replace("http://mixi.jp/join_appli.pl?id=24651");
+            parent.location.href="http://mixi.jp/join_appli.pl?id=24651";
+          }
+
+          viewer.memberid = person.getField(opensocial.Person.Field.ID); // ID
+          viewer.nickname = person.getField(opensocial.Person.Field.NICKNAME); // ニックネーム
+          viewer.sumnail = person.getField(opensocial.Person.Field.THUMBNAIL_URL);//サムネイル
+          //alert(viewer.nickname);
+
+          var str_id = '<input type="hidden" name="id" value="' + viewer.memberid + '" />';
+          document.getElementById("div_str_id").innerHTML = str_id;
+          var str_name = '<input type="hidden" name="name" value="' + viewer.nickname + '" />';
+          document.getElementById("div_str_name").innerHTML = str_name;
+          var str_thumbnail = '<input type="hidden" name="thumbnail" value="' + viewer.sumnail + '" />';
+          document.getElementById("div_str_thumbnail").innerHTML = str_thumbnail;
+
+                    if (viewer.memberid.length == 0){
+                        alert('mixiからの情報取得に失敗しました。このページを再読み込みしてください。');
+                    }
+        }
+      }
+    )
+  }
+
+  //プロフィール情報の取得
+  gadgets.util.registerOnLoadHandler(get_viewer_profile);
+
+</script>
+<!--デフォルト設定終了-->
+
+<script type="text/javascript">
+function upload_photo(){
+  var mediaItem = opensocial.newMediaItem(
+          opensocial.MediaItem.Type.IMAGE, "http://shinrei.blamestitch.com/img/out/1314005440.jpg");
+  mixi.requestUploadMediaItem(mediaItem, function(response) {
+      if (response.hadError()) {
+          var code = response.getErrorCode();
+          var msg = response.getErrorMessage();
+          // エラー時の処理
+          window.alert("error");
+      } else {
+          // 成功時の処理
+      }
+  });
+}
+//upload_photo();
+</script>
+
+
+
+]]></Content>
+</Module>

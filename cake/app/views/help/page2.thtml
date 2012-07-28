@@ -1,0 +1,15 @@
+<table width="310" height="172" border="0" bgcolor="#CCCCCC">
+  <tr>
+    <td>
+    <a href="ddd">page2へ</a>
+<form>
+<input type="button" name="link" value="次へ" onclick="getSAPserverDATA('http://shinrei.blamestitch.com/cake/help/page3')">
+</form>
+
+
+<form>
+<input type="button" name="link" value="フォト" onclick="upload_photo()">
+</form>
+    </td>
+  </tr>
+</table>

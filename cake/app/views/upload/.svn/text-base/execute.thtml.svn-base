@@ -1,0 +1,90 @@
+<style type="text/css">
+@-webkit-keyframes button {
+  0%	{
+    background-color: rgba(0,0,0,1);
+    }
+  100%	{
+    background-color: rgba(0,0,0,0);
+    }
+  }
+div.photo	{
+  background-image: url(<?php echo $img_url ?>);
+  width: 320px;
+  height: 320px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -webkit-box-shadow: 5px 5px 5px #aaaaaa;
+  -moz-box-shadow: 5px 5px 5px #aaaaaa;
+  }
+div.photo a {
+  background-color: rgba(0,0,0,1);
+  color: white;
+  display: block;
+  line-height: 300px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+}
+div.photo a {
+  background-color: rgba(0,0,0,0);
+  -webkit-animation-name: button;
+  -webkit-animation-duration: 5s;
+  -webkit-animation-timing-function: ease-out;
+  -webkit-animation-iteration-count: 1;
+  }
+</style>
+
+
+<table width="320" border="0" cellpadding="0" cellspacing="0" bgcolor="#000000">
+<!-- fwtable fwsrc="/png/photo_execute.png" fwbase="photo_execute.png" fwstyle="Dreamweaver" fwdocid = "1473333424" fwnested="0" -->
+  <tr>
+   <td><img src="/png/spacer.gif" width="320" height="1" border="0" alt=""></td>
+   <td><img src="/png/spacer.gif" width="1" height="1" border="0" alt=""></td>
+  </tr>
+
+  <tr>
+   <td><img name="photo_execute_r1_c1" src="/png/photo_execute_r1_c1.png" width="320" height="125" border="0" alt=""></td>
+   <td><img src="/png/spacer.gif" width="1" height="125" border="0" alt=""></td>
+  </tr>
+  <tr>
+   <td><img src="<?php echo $img_url ?>" width="300">
+
+   <div class="photo">
+<a href="#">.</a>
+</div>
+
+   </td>
+   <td><img src="/png/spacer.gif" width="1" height="92" border="0" alt=""></td>
+  </tr>
+  <tr>
+   <td><a href="/cake/upload/delete_photo/"><img name="photo_execute_r3_c1" src="/png/photo_execute_r3_c1.png" width="320" height="59" border="0" alt=""></a></td>
+   <td><img src="/png/spacer.gif" width="1" height="59" border="0" alt=""></td>
+  </tr>
+  <tr>
+   <td><a href="/cake/upload/execute/"><img name="photo_execute_r4_c1" src="/png/photo_execute_r4_c1.png" width="320" height="53" border="0" alt=""></a></td>
+   <td><img src="/png/spacer.gif" width="1" height="53" border="0" alt=""></td>
+  </tr>
+  <tr>
+   <td><a href="/cake/upload/confirm/"><img name="photo_execute_r5_c1" src="/png/photo_execute_r5_c1.png" width="320" height="55" border="0" alt=""></a></td>
+   <td><img src="/png/spacer.gif" width="1" height="55" border="0" alt=""></td>
+  </tr>
+  <tr>
+   <td><a href="/cake/manage/save_storage/<?php echo $tmp_file_name;?>"><img name="photo_execute_r6_c1" src="/png/photo_execute_r6_c1.png" width="320" height="55" border="0" alt=""></a></td>
+   <td><img src="/png/spacer.gif" width="1" height="55" border="0" alt=""></td>
+  </tr>
+  <tr>
+   <td><p><a href="<?php echo $down_path; ?>">ダウンロードする</a></p>
+     <p>&nbsp;</p>
+     <p><img name="photo_execute_r7_c1" src="/png/photo_execute_r7_c1.png" width="320" height="11" border="0" alt=""></p>
+    <p>&nbsp;</p></td>
+   <td><img src="/png/spacer.gif" width="1" height="11" border="0" alt=""></td>
+  </tr>
+</table>
+
+
+再度描画する
+条件を変更する
+アルバムに保存
+写真をダウンロードする
+
+トップに戻る
+

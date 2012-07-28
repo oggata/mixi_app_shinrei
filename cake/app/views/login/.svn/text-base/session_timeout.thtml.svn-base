@@ -1,0 +1,17 @@
+<table width="310" height="238" border="0" bgcolor="#333333">
+  <tr>
+    <td height="15" bgcolor="#CCCC33">タイムアウトしました</td>
+  </tr>
+  <tr>
+    <td height="21">&nbsp;</td>
+  </tr>
+  <tr>
+    <td height="87">ゲームを開始してから<br>
+      一定時間が経った為タイムアウトしました。<br>
+      ブラウザの更新ボタンを押して<br>
+    再度ゲームのトップ画面からログインして下さい。<br></td>
+  </tr>
+  <tr>
+    <td height="105">&nbsp;</td>
+  </tr>
+</table>

@@ -1,0 +1,18 @@
+<table width="310" height="373" border="0">
+  <tr>
+    <td height="58">&nbsp;</td>
+  </tr>
+  <tr>
+    <td height="71"><?php echo $vlist ?><table width="310" border="0">
+
+  <?php foreach($datas as $data): ?>
+      <tr>
+        <td width="241"><img src="/img/my/<?php echo $data['Photo']['member_id'];?>/<?php echo $data['Photo']['name'];?>.jpg" width="156" height="119"><?php echo $data['Photo']['name']; ?></td>
+        <td width="59">評価</td>
+      </tr>
+<?php endforeach; ?>
+
+
+    </table></td>
+  </tr>
+</table>

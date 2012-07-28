@@ -1,0 +1,34 @@
+<script type="text/javascript" charset="UTF-8" src="http://static.mixi.jp/js/application/touch.js"></script>
+<script type="text/javascript">
+  var mediaItem = opensocial.newMediaItem(
+          opensocial.MediaItem.Type.IMAGE, "<?php echo $upimg_url;?>");
+  mixi.requestUploadMediaItem(mediaItem, function(response) {
+      if (response.hadError()) {
+          var code = response.getErrorCode();
+          var msg = response.getErrorMessage();
+          // エラー時の処理
+          window.alert("error");
+      } else {
+          // 成功時の処理
+      }
+  });
+</script>
+
+
+<table width="320" border="0" bgcolor="#333333">
+  <tr>
+    <td bgcolor="#333333">&nbsp;</td>
+  </tr>
+  <tr>
+    <td>この画面は画像投稿用のページです。<?php echo $upimg_url; ?><br>
+      Mixi本体側から招待ウインドウが開きます。<br>
+      ウィンドウが開かない場合は、対応機種等確認してください。<a href="/cake/top/top/">.</a></td>
+  </tr>
+  <tr>
+    <td height="128">&nbsp;</td>
+  </tr>
+</table>
+
+
+
+

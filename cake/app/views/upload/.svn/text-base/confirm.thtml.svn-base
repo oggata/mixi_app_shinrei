@@ -1,0 +1,107 @@
+<link href="/js/progress/jquery-ui-1.8.11.custom.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="/js/progress/jquery-1.5.1.min.js"></script>
+<script type="text/javascript" src="/js/progress/jquery-ui-1.8.11.custom.min.js"></script>
+
+<script type="text/javascript">
+<!--
+$(document).ready(function()
+{
+    var slider = $('#slider');
+    var slider_ui = $('#slider_ui');
+    var slider_value = $('#slider_value');
+
+    slider.css('width', '300px');
+    slider_ui.css('font-size', '12pt');
+    $('body').css('font-size', '100%');
+
+    //初期値
+    slider_value.text('0');
+    document.getElementById('level_value').value=0;
+
+    slider.slider(
+    {
+        min: 0,
+        max: 100,
+        values: [10],
+        startValue: 10,
+        slide: function (event, ui)
+        {
+            slider_value.text(ui.value);
+            document.getElementById('level_value').value=ui.value;
+        },
+    });
+}
+);
+$(document).ready(function()
+{
+    var slider2 = $('#slider2');
+    var slider_ui2 = $('#slider_ui2');
+    var slider_value2 = $('#slider_value2');
+
+    slider2.css('width', '300px');
+    slider_ui2.css('font-size', '12pt');
+    $('body').css('font-size', '100%');
+
+    slider_value2.text('0');
+    document.getElementById('photo_value').value=0;
+
+    slider2.slider(
+    {
+        min: 0,
+        max: 100,
+        values: [10],
+        startValue: 10,
+        slide: function (event, ui)
+        {
+            slider_value2.text(ui.value);
+            document.getElementById('photo_value').value=ui.value;
+        },
+    });
+}
+);
+-->
+</script>
+
+<form name="form" method="post" enctype="multipart/form-data" action="/cake/upload/execute/" onSubmit="return checkmup()"><table width="320" height="535" border="0" bgcolor="#000000">
+  <tr>
+    <td height="5"><img name="photo_confirm_r1_c1" src="/png/photo_confirm_r1_c1.png" width="320" height="125" border="0" alt=""></td>
+  </tr>
+  <tr>
+    <td class="help_category"><img name="photo_confirm_r2_c1" src="/png/photo_confirm_r2_c1.png" width="320" height="61" border="0" alt=""></td>
+  </tr>
+  <tr>
+    <td height="9" >       <span id="slider_value"></span>
+<div id="slider"></div>
+<input type="hidden" name="data[level]" id="level_value" /></td>
+  </tr>
+  <tr>
+    <td height="9" ><img name="photo_confirm_r4_c1" src="/png/photo_confirm_r4_c1.png" width="320" height="56" border="0" alt=""></td>
+  </tr>
+  <tr>
+    <td height="46" ><div id="slider2"></div>
+<input type="hidden" name="data[photo]" id="photo_value"/></td>
+  </tr>
+  <tr>
+    <td height="46" ><input name="data[target]" type="checkbox" value="1" checked>
+      <img name="photo_confirm_r6_c3" src="/png/photo_confirm_r6_c3.png" width="273" height="48" border="0" alt=""></td>
+  </tr>
+  <tr>
+    <td height="26"  ><table width="209" border="0" id="table-01">
+      <tr>
+        <td width="203"><img src="<?php echo $img_url ?>" width="300"> </td>
+        </tr>
+    </table>      </td>
+  </tr>
+  <tr>
+    <td height="26"  >&nbsp;</td>
+  </tr>
+  <tr>
+    <td height="56"  ><div align="center">
+      <input type="image" src="/png/botan_jikkou.png" name="button1" alt="実行ボタン">
+    </div></td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+  </tr>
+</table>
+</form>

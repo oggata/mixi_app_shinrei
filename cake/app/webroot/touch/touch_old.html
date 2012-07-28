@@ -1,0 +1,117 @@
+<meta name="viewport" content="width=device-width , initial-scale=1.0, minimum-scale=1.0 , maximum-scale=1.0" />
+<link rel="stylesheet" type="text/css" href="http://shinrei.blamestitch.com/cake/app/webroot/css/all_default.css" />
+<style type="text/css">
+<!--
+body {
+  background-image: url('http://shinrei.blamestitch.com/png/tback_img.png');
+  background-color: #1B1B1E;
+  font-size: 12px;
+  color:#FFFFFF;
+  border:0px;
+  width: 320px;
+  margin-right: auto;
+  margin-left: auto;
+  padding:0px;
+}
+-->
+</style>
+<form name="form" method="post" action="http://shinrei.blamestitch.com/cake/login/mixi_login/">
+<table border="0" cellpadding="0" cellspacing="0" width="320">
+<!-- fwtable fwsrc="http://shinrei.blamestitch.com/png/top_img.png" fwbase="top_img.png" fwstyle="Dreamweaver" fwdocid = "1391712505" fwnested="0" -->
+  <tr>
+   <td><img src="http://shinrei.blamestitch.com/png/spacer.gif" width="104" height="1" border="0" alt=""></td>
+   <td><img src="http://shinrei.blamestitch.com/png/spacer.gif" width="126" height="1" border="0" alt=""></td>
+   <td><img src="http://shinrei.blamestitch.com/png/spacer.gif" width="90" height="1" border="0" alt=""></td>
+   <td><img src="http://shinrei.blamestitch.com/png/spacer.gif" width="1" height="1" border="0" alt=""></td>
+  </tr>
+
+  <tr>
+   <td colspan="3"><img name="top_img_r1_c1" src="http://shinrei.blamestitch.com/png/top_img_r1_c1.png" width="320" height="317" border="0" alt=""></td>
+   <td><img src="http://shinrei.blamestitch.com/png/spacer.gif" width="1" height="317" border="0" alt=""></td>
+  </tr>
+  <tr>
+   <td rowspan="2"><img name="top_img_r2_c1" src="http://shinrei.blamestitch.com/png/top_img_r2_c1.png" width="104" height="133" border="0" alt=""></td>
+   <td background="/png/top_img_r2_c2.png"><input type="submit" name="Submit" value="入部するa" style="WIDTH: 100px; HEIGHT:40px"></td>
+   <td rowspan="2"><img name="top_img_r2_c3" src="http://shinrei.blamestitch.com/png/top_img_r2_c3.png" width="90" height="133" border="0" alt=""></td>
+   <td><img src="http://shinrei.blamestitch.com/png/spacer.gif" width="1" height="49" border="0" alt=""></td>
+  </tr>
+  <tr>
+   <td><img name="top_img_r3_c2" src="http://shinrei.blamestitch.com/png/top_img_r3_c2.png" width="126" height="84" border="0" alt=""></td>
+   <td><img src="http://shinrei.blamestitch.com/png/spacer.gif" width="1" height="84" border="0" alt=""></td>
+  </tr>
+</table>
+<div id="div_str_id"></div>
+<div id="div_str_name"></div>
+<div id="div_str_thumbnail"></div>
+</form>
+
+<script type="text/javascript" charset="UTF-8" src="http://static.mixi.jp/js/application/touch.js"></script>
+
+<script type="text/javascript">
+function invite_page(){
+  opensocial.requestShareApp("VIEWER_FRIENDS", null, function(response) {
+    if (response.hadError()) {
+      var errCode = response.getErrorCode();
+      // do something...
+    } else {
+      // do something...
+    }
+  });
+}
+</script>
+
+
+<script type="text/javascript">
+  var oSearch = new CLocationSearch(location.search);
+  //window.alert(oSearch.item('opensocial_owner_id'));
+  var str_id = '<input type="hidden" name="id" value="' + oSearch.item('opensocial_owner_id') + '" />';
+  document.getElementById("div_str_id").innerHTML = str_id;
+  var str_name = '<input type="hidden" name="name" value="" />';
+  document.getElementById("div_str_name").innerHTML = str_name;
+  var str_thumbnail = '<input type="hidden" name="thumbnail" value="" />';
+  document.getElementById("div_str_thumbnail").innerHTML = str_thumbnail;
+  function CLocationSearch(sSource) {
+    var sAry = new Array();
+    {
+      var nCur = 0, nRet = 0;
+      var sSearch = sSource.substr(1);
+      var sName, sValue;
+
+      nRet = sSearch.indexOf('=', nCur)
+      while(nRet >= 0) {
+        sName = sSearch.substring(nCur, nRet);
+        nCur = nRet + 1;
+
+        nRet = sSearch.indexOf('&', nCur);
+        if (nRet == -1) nRet = sSearch.length + 1;
+        sValue = sSearch.substring(nCur, nRet);
+
+        sAry[sName] = sValue;
+
+        nCur = nRet + 1;
+        nRet = sSearch.indexOf('=', nCur);
+      }
+    }
+
+    this.valueOf = function () {
+      return sSource;
+    }
+
+    this.item = function (sVarname) {
+      try {
+        return sAry[sVarname];
+      } catch(e) {
+        return '';
+      }
+    }
+
+    this.length   = function () {
+      return sAry.length;
+    }
+
+    this.toString = function () {
+      return this.length + '';
+
+    }
+  }
+</script>

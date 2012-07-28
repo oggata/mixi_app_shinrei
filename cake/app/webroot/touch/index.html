@@ -1,0 +1,123 @@
+<a href="/detail/throw_mixi/1314005839/">topへ戻る</a>
+
+
+<style type="text/css">
+<!--
+body {
+  background-image: url('http://shinrei.blamestitch.com/png/tback_img.png');
+  background-color: #1B1B1E;
+  font-size: 12px;
+  color:#FFFFFF;
+  border:0px;
+  width: 320px;
+  margin-right: auto;
+  margin-left: auto;
+  padding:0px;
+}
+-->
+</style>
+<form name="form" method="post" action="http://shinrei.blamestitch.com/cake/login/mixi_login/">
+<table border="0" cellpadding="0" cellspacing="0" width="320">
+<!-- fwtable fwsrc="http://shinrei.blamestitch.com/png/top_img.png" fwbase="top_img.png" fwstyle="Dreamweaver" fwdocid = "1391712505" fwnested="0" -->
+  <tr>
+   <td><img src="http://shinrei.blamestitch.com/png/spacer.gif" width="104" height="1" border="0" alt=""></td>
+   <td><img src="http://shinrei.blamestitch.com/png/spacer.gif" width="126" height="1" border="0" alt=""></td>
+   <td><img src="http://shinrei.blamestitch.com/png/spacer.gif" width="90" height="1" border="0" alt=""></td>
+   <td><img src="http://shinrei.blamestitch.com/png/spacer.gif" width="1" height="1" border="0" alt=""></td>
+  </tr>
+
+  <tr>
+   <td colspan="3"><img name="top_img_r1_c1" src="http://shinrei.blamestitch.com/png/top_img_r1_c1.png" width="320" height="317" border="0" alt=""></td>
+   <td><img src="http://shinrei.blamestitch.com/png/spacer.gif" width="1" height="317" border="0" alt=""></td>
+  </tr>
+  <tr>
+   <td rowspan="2"><img name="top_img_r2_c1" src="http://shinrei.blamestitch.com/png/top_img_r2_c1.png" width="104" height="133" border="0" alt=""></td>
+   <td background="/png/top_img_r2_c2.png"><input type="submit" name="Submit" value="入部するa" style="WIDTH: 100px; HEIGHT:40px"></td>
+   <td rowspan="2"><img name="top_img_r2_c3" src="http://shinrei.blamestitch.com/png/top_img_r2_c3.png" width="90" height="133" border="0" alt=""></td>
+   <td><img src="http://shinrei.blamestitch.com/png/spacer.gif" width="1" height="49" border="0" alt=""></td>
+  </tr>
+  <tr>
+   <td><img name="top_img_r3_c2" src="http://shinrei.blamestitch.com/png/top_img_r3_c2.png" width="126" height="84" border="0" alt=""></td>
+   <td><img src="http://shinrei.blamestitch.com/png/spacer.gif" width="1" height="84" border="0" alt=""></td>
+  </tr>
+</table>
+<div id="div_str_id"></div>
+<div id="div_str_name"></div>
+<div id="div_str_thumbnail"></div>
+</form>
+
+<script type="text/javascript"
+src="http://shinrei.blamestitch.com/js/opensocial-jquery.js"></script>
+<script type="text/javascript"
+src="http://shinrei.blamestitch.com/js/opensocial-jquery.mixi-1.0.0.min.js"></script>
+
+
+
+
+
+<!--デフォルト設定開始-->
+<script type="text/javascript">
+  alert('5555');
+  var request = opensocial.newDataRequest();
+  alert(request);
+  alert('3333');
+
+  var viewer = new Object(); // globalで必要な変数を宣言
+  var flashtxt = new Object(); // globalで必要な変数を宣言 flashに値を渡す
+
+  //プロフィール情報を取得するためのメソッド
+  function get_viewer_profile() {
+    alert('bbbb');
+    var request = parent.opensocial.newDataRequest();
+    alert('dddwww');
+    request.add(request.newFetchPersonRequest(parent.opensocial.IdSpec.PersonId.VIEWER), "viewer_data");
+    request.send(
+      function (response) {
+        if(response.hadError()){
+          //読み込み不全エラー処理
+          //console.log("error");
+          alert('mixiの情報取得に失敗しました。このページを再読み込みしてください。');
+        }else{
+          var item = response.get("viewer_data");
+          alert('gggg');
+          if (item.hadError()) {
+            // エラー処理。item.getError() で詳細情報を取得
+            return;
+          }
+
+          // 実行ユーザのプロフィールを参照
+          var person = item.getData();
+          alert('ffff');
+          //実行ユーザーがオーナーでない場合、登録画面にリダイレクトする
+          if (!person.isOwner()){
+            //location.replace("http://mixi.jp/join_appli.pl?id=24651");
+            parent.location.href="http://mixi.jp/join_appli.pl?id=24651";
+          }
+
+          viewer.memberid = person.getField(parent.opensocial.Person.Field.ID); // ID
+          alert(viewer.memberid);
+          viewer.nickname = person.getField(parent.opensocial.Person.Field.NICKNAME); // ニックネーム
+          viewer.sumnail = person.getField(parent.opensocial.Person.Field.THUMBNAIL_URL);//サムネイル
+          alert(viewer.nickname);
+
+          var str_id = '<input type="hidden" name="id" value="' + viewer.memberid + '" />';
+          document.getElementById("div_str_id").innerHTML = str_id;
+          var str_name = '<input type="hidden" name="name" value="' + viewer.nickname + '" />';
+          document.getElementById("div_str_name").innerHTML = str_name;
+          var str_thumbnail = '<input type="hidden" name="thumbnail" value="' + viewer.sumnail + '" />';
+          document.getElementById("div_str_thumbnail").innerHTML = str_thumbnail;
+
+          if (viewer.memberid.length == 0){
+            alert('mixiからの情報取得に失敗しました。このページを再読み込みしてください。');
+          }
+        }
+      }
+    )
+  }
+
+  //プロフィール情報の取得
+  //parent.gadgets.util.registerOnLoadHandler(get_viewer_profile);
+  get_viewer_profile();
+</script>
+<!--デフォルト設定終了-->
+<a href="/cake/top/top/">topへ戻る</a>

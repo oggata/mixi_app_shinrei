@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Module>
+<ModulePrefs title="Hello">
+<Require feature="dynamic-height"/>
+<Require feature="opensocial-0.8"/>
+</ModulePrefs>
+<Content type="url" view="touch" href="http://shinrei.blamestitch.com/cake/app/webroot/touch/touch.html" />
+<Content type="url" view="mobile" href="http://shinrei.blamestitch.com/cake/app/webroot/touch/touch.html" />
+<Content type="html"><![CDATA[
+
+
+
+
+
+
+<script type="text/javascript">
+function getData() {
+  var url = "http://shinrei.blamestitch.com/cake/help/page4/"; // *1
+
+  // *2：ここから ―――――――――――――――
+  var params = {};
+  params[gadgets.io.RequestParameters.METHOD] = gadgets.io.MethodType.GET;
+  params[gadgets.io.RequestParameters.CONTENT_TYPE] = gadgets.io.ContentType.JSON;
+  params[gadgets.io.RequestParameters.AUTHORIZATION] = gadgets.io.AuthorizationType.NONE;
+  // *2：ここまで ―――――――――――――――
+  gadgets.io.makeRequest(url, function(response) { // *3
+  }, params);
+}
+</script>
+
+
+<input id="upload" type="file" name="upload" enctype="multipart/form-data"><br>
+<button onclick="getData()">アップロード</button><br>
+
+
+
+
+
+
+
+]]></Content>
+</Module>

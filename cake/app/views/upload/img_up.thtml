@@ -1,0 +1,42 @@
+<style type="text/css">
+<!--
+.style1 {
+	color: #FF0000;
+	font-weight: bold;
+	font-size: 14px;
+}
+-->
+</style>
+<form name="form" method="post" enctype="multipart/form-data" action="/cake/member/img_up_confirm/" onSubmit="return checkmup()">
+<table width="750" height="412" border="0">
+  <tr>
+    <td height="5"><img src="/jpg/spacer.gif" width="57" height="47"></td>
+  </tr>
+  <tr>
+    <td height="15" class="help_category">画像登録ページ</td>
+  </tr>
+  <tr>
+    <td height="33" class="help_contents">対応可能フォーマットは .jpg　のファイルのみとなります。<br>
+      ご注意下さい。<br>
+      <span class="style1"><?php echo $error_message ?></span></td>
+  </tr>
+  <tr>
+    <td height="56"  class="help_contents"><table width="700" border="0" id="table-01">
+      <tr>
+        <th width="100">画像ファイル</th>
+        <td width="590" >
+          <input name='data[Example][csv]' type='file' size="60"/>
+          <br>
+      ※現在ＪＰＧ形式の画像のみ対応しております。</td>
+      </tr>
+    </table>
+      <input type="submit" name="Submit2" value="確認画面へ"></td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td height="146">&nbsp;</td>
+  </tr>
+</table>
+</form>

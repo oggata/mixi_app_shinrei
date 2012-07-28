@@ -1,0 +1,72 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+
+    <title>jQTouch4 åè Form&amp;Ajax</title>
+
+    <style type="text/css" media="screen">@import "../../jqtouch/jqtouch.css";</style>
+    <style type="text/css" media="screen">@import "../../themes/jqt/theme.css";</style>
+    <script src="../../jqtouch/jquery-1.4.2.js" type="text/javascript" charset="utf-8"></script>
+    <script src="../../jqtouch/jqtouch.js" type="application/x-javascript" charset="utf-8"></script>
+
+
+    <script type="text/javascript" charset="utf-8">
+        $.jQTouch();
+    </script>
+    <style type="text/css" media="screen">
+        body.fullscreen #home .info {
+            display: none;
+        }
+        #about {
+            padding: 100px 10px 40px;
+            text-shadow: rgba(255, 255, 255, 0.3) 0px -1px 0;
+            font-size: 13px;
+            text-align: center;
+            background: #161618;
+        }
+        #about p {
+            margin-bottom: 8px;
+        }
+        #about a {
+            color: #fff;
+            font-weight: bold;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <form action="http://shinrei.blamestitch.com/post.php" method="POST">
+        <ul class="form">
+            <li><input type="text" name="text" placeholder="Text" /></li>
+            <li><textarea name="textarea" style="height:60px">Textarea</textarea></li>
+            <li>Toggle <span class="toggle"><input name="toggle" value="on" type="checkbox" /></span></li>
+            <li>
+                <select name="select">
+                    <optgroup label="optgroup_1">
+                        <option value="1-1">1-a1</option>
+                        <option value="1-2">1-2</option>
+                    </optgroup>
+                    <optgroup label="optgroup_2">
+                        <option value="2-1">2-1</option>
+                        <option value="2-2">2-2</option>
+                    </optgroup>
+                </select>
+            </li>
+            <li><input type="password" name="password" value="pass" /></li>
+            <li><input type="checkbox" name="checkbox" value="check" checked="checked" title="checkbox" /></li>
+            <li><input type="radio" name="radio" value="radio" title="radio" checked /></li>
+        </ul>
+        <a style="margin:0 10px 10px 10px;color:rgba(0,0,0,.9)" href="#" class="submit whiteButton">Submit</a>
+    </form>
+
+
+
+<form action="post.php" method="post">
+    <input type="hidden" name="test" value="test">aaaaaaaaa
+    <input type="submit" value="Submit">
+</form>
+		
+</body>
+</html>
+

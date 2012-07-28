@@ -1,0 +1,5 @@
+<IfModule mod_rewrite.c>
+   RewriteEngine on
+   RewriteRule    ^$ /cake/top/    [L]
+   RewriteRule    (.*) /cake/$1 [L]
+</IfModule>

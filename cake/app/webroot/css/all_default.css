@@ -1,0 +1,147 @@
+#headerbg {
+  background-color: #333333;
+  background-image: url('http://shinrei.blamestitch.com/png/hback_img.png');
+  width:100%;
+  min-width:320px;
+}
+#header {
+  width: 320px;
+  margin-right: auto;
+  margin-left: auto;
+}
+#menubg {
+  width:100%;
+  background-repeat: repeat-x;
+  min-width:320px;
+}
+#menu {
+  width: 320px;
+  margin-right: auto;
+  margin-left: auto;
+}
+#greenmenubg {
+  background-image: url('http://ship.blamestitch.com/jpg/header_back.gif');
+  width:100%;
+  min-width:320px;
+}
+#greenmenu {
+  width: 320px;
+  margin-right: auto;
+  margin-left: auto;
+}
+#bodybg {
+  background-image: url('http://shinrei.blamestitch.com/png/back_img.png');
+  width:100%;
+  background-repeat: repeat-x;
+  min-width:320px;
+}
+#body {
+  width: 320px;
+  margin-right: auto;
+  margin-left: auto;
+  background-image: url('http://shinrei.blamestitch.com/png/back_img.png');
+}
+#footerbg {
+  background-color: #000000;
+  width:100%;
+  background-repeat: repeat-x;
+  min-width:320px;
+}
+#footer {
+  width: 320px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+hr {
+height: 1px;
+border: none;
+border-top: 1px #000000 dotted;
+}
+
+body {
+  font-size: 12px;
+  font-color: #FFFFFF;
+  background-image: url('http://shinrei.blamestitch.com/png/back_img.png');
+  border:0px;
+  margin:0px;
+  padding:0px;
+}
+
+img {
+  vertical-align:bottom;
+  border:0px;
+  margin:0px;
+  padding:0px;
+}
+
+table {
+  font-size: 12px;
+  font-color: #FFFFFF;
+  border:0px;
+  margin-left: auto;
+  margin-right: auto;
+  cellpadding: 0px;
+  cellspacing: 0px;
+  padding:0px;
+}
+
+A:link {
+  color: #66FF00;
+  text-decoration: none
+}
+A:visited {
+  color: #66FF00;
+  text-decoration: none
+}
+A:active {
+  color: #66FF00;
+   text-decoration: none
+}
+A:hover {
+  color: #66FF00;
+  text-decoration: underline;
+}
+
+ul.pager {
+    list-style:none;
+    font-size: 16px;
+      margin: 0px;
+}
+ul.pager li {
+   list-style:none;
+      float: left;
+      margin-right: 5px;
+      border: 1px #666666 solid;
+      font-weight: bold;
+}
+ul.pager li.prev,
+ul.pager li.next {
+    list-style:none;
+      border: none;
+}
+ul.pager li a {
+    list-style:none;
+      position: relative;
+      display: block;
+      padding: 3px 8px;
+      color: #666666;
+}
+ul.pager li a:link,
+ul.pager li a:visited {
+    list-style:none;
+      text-decoration: none;
+}
+ul.pager li a:hover,
+ul.pager li a:active {
+    list-style:none;
+      background-color: #CCCCCC;
+      text-decoration: none;
+}
+ul.pager li em {
+    list-style:none;
+      display: block;
+      padding: 3px 8px;
+      background: #666666;
+      color: #FFFFFF;
+}

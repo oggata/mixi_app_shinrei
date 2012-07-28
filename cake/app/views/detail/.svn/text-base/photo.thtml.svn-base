@@ -1,0 +1,23 @@
+<table width="310" height="373" border="0" bgcolor="#000000">
+  <tr>
+    <td height="58">&nbsp;</td>
+  </tr>
+  <tr>
+    <td height="33"><table width="310" border="0">
+
+  <?php foreach($datas as $data): ?>
+      <tr>
+        <td><img src="/img/my/<?php echo $data['Photo']['member_id'];?>/<?php echo $data['Photo']['name'];?>.jpg" width="310" border="0"></td>
+        </tr>
+<?php endforeach; ?>
+
+
+    </table></td>
+  </tr>
+  <tr>
+    <td height="15"><a href="/cake/manage/my_list/">リストに戻る</a></td>
+  </tr>
+  <tr>
+    <td height="15">&nbsp;</td>
+  </tr>
+</table>

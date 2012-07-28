@@ -1,0 +1,43 @@
+<style type="text/css">
+<!--
+.style1 {color: #00FF00}
+.style2 {color: #FFFFFF}
+.state_prifix {
+  color: #FFFF00;
+  font-weight: bold;
+}
+-->
+</style>
+<img name="mymixi_list_r1_c1" src="/png/mymixi_list_r1_c1.png" width="320" height="120" border="0" alt="">
+<?php if(count($rankings)==0){ ?>
+
+<table width="320" border="0" bgcolor="#333333">
+  <tr>
+    <td>リスト</td>
+  </tr>
+  <tr>
+    <td>だれも知り合いがいません。</td>
+  </tr>
+</table>
+<?php } ?>
+
+<table width="320" border="0" cellpadding="0" cellspacing="0" bgcolor="#333333">
+  <tr>
+    <th colspan="3">&nbsp;</th>
+  </tr>
+  <tr>
+    <th width="47">画像</th>
+    <th width="202">名前</th>
+    <th width="71">枚数</th>
+  </tr>
+   <?php foreach($rankings as $ranking): ?>
+  <tr>
+    <td><img src="<?php echo $ranking['thumnail_url']?>" width="47" height="46"></td>
+    <td><a href="/cake/gallery/friend_photo/<?php echo $ranking['id']; ?>"><?php echo $ranking['name']; ?>...</a></td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td colspan="3"><hr></td>
+  </tr>
+   <?php endforeach; ?>
+</table>

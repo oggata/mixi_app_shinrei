@@ -1,0 +1,104 @@
+<style type="text/css">
+<!--
+.style1 {color: #FFFFFF}
+-->
+</style>
+<table width="320" border="0">
+  <tr>
+    <td><strong class="style1">「心霊写真部」へようこそ。</strong></td>
+  </tr>
+  <tr>
+    <td><span class="style1">あなたが日頃、何気なく携帯などで撮影している「写真」。<br>
+      そんな写真にも実は「霊」は写り込んでいます。
+        </span>      <p class="style1">このアプリでフィルタリングすることで、<br>
+        実は写真に写っている「霊」をより見やすく<br>
+        することができます。</p>
+        <p class="style1">一体どんな霊が写り込んでいるのか、ぜひ試してみてください。<br>
+    あの世からのメッセージがそこには隠されているかもしれません・・。</p></td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td><span class="style1"><strong>写真を変換する方法</strong></span></td>
+  </tr>
+  <tr>
+    <td><span class="style1">１．写真を選択する<br>
+      ※ jpg gif pngのファイルフォーマットが利用できます。
+        </span>      <p class="style1">２．フィルターの設定</p>
+        <table width="320" border="1" bordercolor="#999999" bgcolor="#333333">
+          <tr>
+            <td width="79" height="54" class="style1">心霊フィルターの強度</td>
+            <td width="225" class="style1">強度が強い（右にある)ほど、<br>
+      より多くの霊を検出することが可能です。</td>
+          </tr>
+          <tr>
+            <td height="35" class="style1">写真のノイズ</td>
+            <td class="style1">強い霊波動によって磁場が歪み写真にノイズが乗ります。<br>
+      （右にある)ほど、磁場の影響を受ける為、<br>
+      なるべくデフォルトの位置（左)で使用してください。<br></td>
+          </tr>
+          <tr>
+            <td height="35" class="style1">心霊マーカー</td>
+            <td class="style1">写真のどこに霊が写っているか<br>
+      分からないことがあるため、赤い丸で囲む機能です。<br>
+      不要の場合はチェックを外してください。</td>
+          </tr>
+        </table>
+        <p class="style1">３．書き出し</p>
+        <table width="320" border="1" bordercolor="#999999" bgcolor="#333333">
+          <tr>
+            <td width="79" height="54" class="style1">再度描画</td>
+            <td width="225" class="style1">同じ写真、同じ条件で、<br>
+      再度描画します。<br>
+      違う霊が見つかるかもしれません</td>
+          </tr>
+          <tr>
+            <td height="35" class="style1">条件変更</td>
+            <td class="style1">同じ写真で<br>
+      心霊フィルターの条件を変更します。</td>
+          </tr>
+          <tr>
+            <td height="16" class="style1">アルバム</td>
+            <td class="style1">アプリ内部のアルバムに写真を保存します。<br>
+      マイミクなどに見てもらうことができます。</td>
+          </tr>
+          <tr>
+            <td height="17" class="style1">ダウンロード</td>
+            <td class="style1">スマートフォンやPCなどお使いの機器に<br>
+      写真をダウンロードできます。<br>
+      つぶやきなどにご利用ください。</td>
+          </tr>
+    </table></td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td><strong class="style1">写真の管理機能</strong></td>
+  </tr>
+  <tr>
+    <td class="style1">手持ちの写真を最大１０枚まで、アプリの内部に<br>
+      保存することが可能です。<br>
+      マイミクには見られることがあるため、<br>
+    見られては困る写真などは保存しないようにしてください。</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td><strong class="style1">マイミク機能</strong></td>
+  </tr>
+  <tr>
+    <td class="style1">マイミクの撮影した心霊写真を見ることができます。</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+  </tr>
+</table>

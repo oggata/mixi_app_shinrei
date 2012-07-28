@@ -1,0 +1,41 @@
+<table width="320" border="0" cellpadding="0" cellspacing="0" bgcolor="#000000">
+<!-- fwtable fwsrc="/png/photo_saved.png" fwbase="photo_saved.png" fwstyle="Dreamweaver" fwdocid = "359324494" fwnested="0" -->
+  <tr>
+   <td><img src="/png/spacer.gif" width="320" height="1" border="0" alt=""></td>
+   <td><img src="/png/spacer.gif" width="1" height="1" border="0" alt=""></td>
+  </tr>
+
+  <tr>
+   <td><img name="photo_saved_r1_c1" src="/png/photo_saved_r1_c1.png" width="320" height="127" border="0" alt=""></td>
+   <td><img src="/png/spacer.gif" width="1" height="127" border="0" alt=""></td>
+  </tr>
+  <tr>
+   <td><img src="<?php echo $up_photo_url;?>" width="300"></td>
+   <td><img src="/png/spacer.gif" width="1" height="146" border="0" alt=""></td>
+  </tr>
+  <tr>
+   <td><img name="photo_saved_r3_c1" src="/png/photo_saved_r3_c1.png" width="320" height="7" border="0" alt=""></td>
+   <td><img src="/png/spacer.gif" width="1" height="7" border="0" alt=""></td>
+  </tr>
+  <tr>
+   <td><a href="/cake/manage/my_list/"><img name="photo_saved_r4_c1" src="/png/photo_saved_r4_c1.png" width="320" height="49" border="0" alt=""></a></td>
+   <td><img src="/png/spacer.gif" width="1" height="49" border="0" alt=""></td>
+  </tr>
+  <tr>
+   <td><img name="photo_saved_r5_c1" src="/png/photo_saved_r5_c1.png" width="320" height="4" border="0" alt=""></td>
+   <td><img src="/png/spacer.gif" width="1" height="4" border="0" alt=""></td>
+  </tr>
+  <tr>
+   <td><a href="/cake/top/top/"><img name="photo_saved_r6_c1" src="/png/photo_saved_r6_c1.png" width="320" height="47" border="0" alt=""></a></td>
+   <td><img src="/png/spacer.gif" width="1" height="47" border="0" alt=""></td>
+  </tr>
+  <tr>
+   <td><img name="photo_saved_r7_c1" src="/png/photo_saved_r7_c1.png" width="320" height="13" border="0" alt=""></td>
+   <td><img src="/png/spacer.gif" width="1" height="13" border="0" alt=""></td>
+  </tr>
+  <tr>
+   <td>&nbsp;</td>
+   <td><img src="/png/spacer.gif" width="1" height="57" border="0" alt=""></td>
+  </tr>
+</table>
+

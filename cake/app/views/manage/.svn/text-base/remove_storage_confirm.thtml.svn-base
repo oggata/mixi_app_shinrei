@@ -1,0 +1,17 @@
+<form name="form" method="post" action="/cake/manage/remove_storage_execute/">
+<table width="310" height="126" border="0">
+  <tr>
+    <td>下記を削除してもＯＫ？</td>
+  </tr>
+  <tr>
+    <td><img src="<?php echo $remove_photo_url;?>" width="300"></td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td><input type="submit" name="Submit" value="削除します"></td>
+  </tr>
+</table>
+</form>
+

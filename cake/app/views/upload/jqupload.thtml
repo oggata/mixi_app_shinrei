@@ -1,0 +1,5 @@
+<img src="<?php echo $img_url ?>" width="300">
+<input type="image" src="/png/botan_kakuni.png" name="button1" alt="実行ボタン">
+<script type="text/javascript">
+  document.getElementById("file1").disabled = true;
+</script>

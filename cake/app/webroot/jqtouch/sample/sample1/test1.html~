@@ -1,0 +1,48 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+
+    <title>jQTouch4 åè Form&amp;Ajax</title>
+
+    <style type="text/css" media="screen">@import "../../jqtouch/jqtouch.css";</style>
+    <style type="text/css" media="screen">@import "../../themes/jqt/theme.css";</style>
+    <script src="../../jqtouch/jquery-1.4.2.js" type="text/javascript" charset="utf-8"></script>
+    <script src="../../jqtouch/jqtouch.js" type="application/x-javascript" charset="utf-8"></script>
+
+
+    <script type="text/javascript" charset="utf-8">
+        $.jQTouch();
+    </script>
+    <style type="text/css" media="screen">
+        body.fullscreen #home .info {
+            display: none;
+        }
+        #about {
+            padding: 100px 10px 40px;
+            text-shadow: rgba(255, 255, 255, 0.3) 0px -1px 0;
+            font-size: 13px;
+            text-align: center;
+            background: #161618;
+        }
+        #about p {
+            margin-bottom: 8px;
+        }
+        #about a {
+            color: #fff;
+            font-weight: bold;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+
+
+<form action="post.php" method="post">
+    <input type="hidden" name="test" value="test">aaaaaaaaa
+    <input type="submit" value="Submit">
+</form>
+		
+</body>
+</html>
+

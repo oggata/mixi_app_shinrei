@@ -1,0 +1,50 @@
+8
+
+dir
+82
+http://182.48.52.148/svn/repos/ships/trunk/webroot/js/prototype.js
+http://182.48.52.148/svn/repos/ships
+
+
+
+2011-07-20T07:02:01.602276Z
+4
+
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+95a7d2b8-142a-4102-87ea-99681f53f8ea
+
+prototype.js
+file
+
+
+
+
+2006-10-26T15:39:00.000000Z
+725cd09eb6cca738be202daa99d2d328
+2011-07-20T07:02:01.602276Z
+4
+
+prototype1.5.0_rc0.js
+file
+
+
+
+
+2006-10-26T15:39:00.000000Z
+f57aaa32617e68bc8328178fd26c1f52
+2011-07-20T07:02:01.602276Z
+4
+

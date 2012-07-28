@@ -1,0 +1,46 @@
+<style type="text/css">
+<!--
+.style1 {color: #00FF00}
+.style2 {color: #FFFFFF}
+.state_prifix {
+  color: #FFFF00;
+  font-weight: bold;
+}
+-->
+</style>
+<table width="320" border="0" bgcolor="#435E3F"  cellpadding="0" cellspacing="0">
+  <tr>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td><a href="/cake/ranking/top/">総合順位ランキング(100位迄)</a> / <a href="/cake/ranking/mymixi/">マイミクランキング</a></td>
+  </tr>
+  <tr>
+    <td><img src="/jpg/operation_2_r10_c1.gif" width="320" height="24"></td>
+  </tr>
+</table>
+<table width="320" border="0" bordercolor="#999999" bgcolor="#333333" cellpadding="0" cellspacing="0">
+  <tr>
+    <th colspan="4">&nbsp;</th>
+  </tr>
+
+  <tr>
+    <th width="40">画像</th>
+    <th width="88">名前</th>
+    <th width="126">ステータス</th>
+    <th width="66">移動</th>
+  </tr>
+
+   <?php foreach($rankings as $ranking): ?>
+  <tr>
+    <td><img src="<?php echo $ranking['thumnail_url']?>" width="40"></td>
+    <td><?php echo $ranking['name']; ?></td>
+    <td>Lv.<?php echo $ranking['lv']; ?> [<?php echo $ranking['win_count']; ?>勝/<?php echo $ranking['lose_count']; ?>敗]<br>
+     場所<?php echo $ranking['server_name']; ?><br>座標 x:<?php echo $ranking['map_x']?> y:<?php echo $ranking['map_y']?></td>
+    <td><?php if($member_id <> $ranking['id']){?><a href="/cake/server/change_server_near_mymixi/<?php echo $ranking['id']?>">このユーザーの近くへ移動</a><?php }else{ ?>--<?php } ?></td>
+  </tr>
+  <tr>
+    <td colspan="4"><hr></td>
+  </tr>
+   <?php endforeach; ?>
+</table>

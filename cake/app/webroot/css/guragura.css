@@ -1,0 +1,36 @@
+div.messages{
+ position: relative;
+ bottom: 0;
+ -webkit-animation-duration: 3s;
+ -webkit-animation-timing-function: ease-in-out;
+ -webkit-animation-iteration-count: infinite;
+ -webkit-transform-origin: middle center;
+ -webkit-animation-name: outer03;
+ -webkit-transform: rotate(0deg);
+}
+@-webkit-keyframes outer03 {
+ 0%{
+ -webkit-transform: rotate(0deg);
+ bottom: 0;
+ }
+ 50% {
+ -webkit-transform: rotate(0deg);
+ bottom: 0;
+ }
+ 60% {
+ -webkit-transform: rotate(5deg);
+ bottom: 5px;
+ }
+ 70% {
+ -webkit-transform: rotate(-5deg);
+ }
+ 80% {
+ -webkit-transform: rotate(4deg);
+ }
+ 90% {
+ -webkit-transform: rotate(-3deg);
+ }
+ 100% {
+ -webkit-transform: rotate(0deg);
+ }
+}

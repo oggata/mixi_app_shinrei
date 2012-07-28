@@ -1,0 +1,69 @@
+<script type="text/javascript" src="/js/jquery.alerts-1.1/jquery-1.5.1.min.js"></script>
+<script type="text/javascript" src="/js/jquery.alerts-1.1/jquery.alerts.js"></script>
+<script type="text/javascript" src="/js/jquery.alerts-1.1/jquery.ui.draggable.js"></script>
+<link rel="stylesheet" href="/js/jquery.alerts-1.1/jquery.alerts.css" type="text/css" />
+<script type="text/javascript" src="/js/jquery.upload-1.0.2.js"></script>
+
+<script type="text/javascript">
+<!--
+<?php echo $alert_txt ?>
+// -->
+</script>
+
+<link rel="stylesheet" href="/css/guragura.css" type="text/css" />
+
+
+
+<script type="text/javascript">
+    $(function() {
+        $('#file1').change(function() {
+            $(this).upload('/cake/upload/jqupload/', function(res) {
+                $(res).insertAfter(this);
+            }, 'html');
+        });
+    });
+</script>
+
+
+<form name="form" method="post" action="/cake/upload/confirm/" onSubmit="return checkmup()">
+<table width="320" border="0" cellpadding="0" cellspacing="0" bgcolor="#000000">
+<!-- fwtable fwsrc="/png/photo.png" fwbase="photo.png" fwstyle="Dreamweaver" fwdocid = "166876146" fwnested="0" -->
+  <tr>
+   <td><img src="/png/spacer.gif" width="320" height="1" border="0" alt=""></td>
+   <td><img src="/png/spacer.gif" width="1" height="1" border="0" alt=""></td>
+  </tr>
+
+  <tr>
+   <td> <div class="messages"><img name="photo_r1_c1" src="/png/photo_r1_c1.png" width="320" height="125" border="0" alt=""></div></td>
+   <td><img src="/png/spacer.gif" width="1" height="125" border="0" alt=""></td>
+  </tr>
+  <tr>
+   <td><img name="photo_r2_c1" src="/png/photo_r2_c1.png" width="320" height="75" border="0" alt=""></td>
+   <td><img src="/png/spacer.gif" width="1" height="75" border="0" alt=""></td>
+  </tr>
+  <tr>
+   <td><input name="data[Upload][photo]" id="file1" type="file">
+    <br></td>
+   <td rowspan="3"><img src="/png/spacer.gif" width="1" height="50" border="0" alt=""></td>
+  </tr>
+  <tr>
+    <td><span class="help_contents">
+    </span></td>
+  </tr>
+  <tr>
+    <td>
+
+    </td>
+  </tr>
+  <tr>
+   <td>&nbsp;</td>
+   <td><img src="/png/spacer.gif" width="1" height="200" border="0" alt=""></td>
+  </tr>
+</table>
+</form>
+
+<script type="text/javascript">
+function input_desabled(){
+  document.getElementById("file1").disabled = true;
+}
+</script>

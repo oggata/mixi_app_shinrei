@@ -1,0 +1,23 @@
+ <table width="700">
+  <tr>
+    <td height="5"><img src="/jpg/spacer.gif" width="57" height="47"></td>
+  </tr>
+  <tr>
+    <td height="15" class="help_category">画像登録ページ</td>
+  </tr>
+  <tr>
+    <td height="43" class="help_contents">対応可能フォーマットは .jpg　のファイルのみとなります。<br>
+      ご注意下さい。</td>
+  </tr>
+  <tr>
+    <td  class="help_contents">      <table width="209" border="0" id="table-01">
+        <tr>
+          <td width="203"><img src="<?php echo $img_tmp_url ?>" width="200" height="200"> </td>
+        </tr>
+      </table></td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+  </tr>
+</table>
+

@@ -1,0 +1,16 @@
+<table width="310" height="169" border="0" bgcolor="#CCCCCC">
+  <tr>
+    <td height="15">&nbsp;</td>
+  </tr>
+  <tr>
+    <td height="148"><?php echo $vlist ?>
+      <table width="310" border="0">
+  <?php foreach($datas as $data): ?>
+      <tr>
+        <td width="241" height="124"><a href="/cake/gallery/photo_detail/<?php echo $data['Photo']['id'];?>"><img src="/img/my/<?php echo $data['Photo']['member_id'];?>/<?php echo $data['Photo']['name'];?>.jpg" width="156" height="119" border="0"></a><?php echo $data['Photo']['name']; ?></td>
+        <td width="59">評価</td>
+      </tr>
+<?php endforeach; ?>
+    </table></td>
+  </tr>
+</table>

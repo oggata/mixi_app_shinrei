@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/repos/shinrei/!svn/ver/16/trunk/app/views/upload
+END
+throw_mixi.thtml
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/repos/shinrei/!svn/ver/4/trunk/app/views/upload/throw_mixi.thtml
+END
+delete_photo.thtml
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/repos/shinrei/!svn/ver/4/trunk/app/views/upload/delete_photo.thtml
+END
+confirm.thtml
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/repos/shinrei/!svn/ver/4/trunk/app/views/upload/confirm.thtml
+END
+img_up_confirm.thtml
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/repos/shinrei/!svn/ver/4/trunk/app/views/upload/img_up_confirm.thtml
+END
+jqupload.thtml
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/repos/shinrei/!svn/ver/10/trunk/app/views/upload/jqupload.thtml
+END
+img_up.thtml
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/repos/shinrei/!svn/ver/4/trunk/app/views/upload/img_up.thtml
+END
+execute.thtml
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/repos/shinrei/!svn/ver/16/trunk/app/views/upload/execute.thtml
+END
+img_up_execute.thtml
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/repos/shinrei/!svn/ver/4/trunk/app/views/upload/img_up_execute.thtml
+END
+top.thtml
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/repos/shinrei/!svn/ver/10/trunk/app/views/upload/top.thtml
+END

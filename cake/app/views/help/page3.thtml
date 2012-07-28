@@ -1,0 +1,27 @@
+<script type="text/javascript" src="http://shinrei.blamestitch.com/js/jquery-1.4.2.min.js"></script>
+<script type="text/javascript" src="http://shinrei.blamestitch.com/js/jquery.upload-1.0.2.js"></script>
+<script type="text/javascript">
+    function uploadFile() {
+        console.log('start');
+        $('#upload').upload(
+            'http://shinrei.blamestitch.com/cake/help/page4/',
+            {now:'2010/10/08'},
+            function (res) {
+                console.log(res);
+                $("#result").html(res);
+            },
+            'text'
+        );
+        console.log('finish');
+    }
+</script>
+
+
+<input id="upload" type="file" name="upload" enctype="multipart/form-data"><br>
+<button onclick="uploadFile()">アップロード</button><br>
+<div id="result"></div>
+<table width="310" height="172" border="0" bgcolor="#CCCCCC">
+  <tr>
+    <td><a href="ddd">page4へ</a></td>
+  </tr>
+</table>

@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/repos/shinrei/!svn/ver/9/trunk/app/views/gallery
+END
+mymixi.thtml
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/repos/shinrei/!svn/ver/19/trunk/app/views/gallery/mymixi.thtml
+END
+photo_list.thtml
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/repos/shinrei/!svn/ver/9/trunk/app/views/gallery/photo_list.thtml
+END
+photo_detail.thtml
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/repos/shinrei/!svn/ver/9/trunk/app/views/gallery/photo_detail.thtml
+END
+top.thtml
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/repos/shinrei/!svn/ver/4/trunk/app/views/gallery/top.thtml
+END

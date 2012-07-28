@@ -1,0 +1,43 @@
+<style type="text/css">
+<!--
+.style3 {color: #FFFFFF}
+-->
+</style>
+<form name="form" method="post" action="http://ship.blamestitch.com/cake/login/mixi_login/">
+<table width="320" height="381" border="0" bgcolor="#202021"  cellpadding="0" cellspacing="0">
+  <tr>
+    <td height="181" colspan="2"><img src="/jpg/doc.png" width="320" height="180"></td>
+  </tr>
+  <tr>
+    <td height="15" colspan="2"><p class="style3"><br>
+      西暦20XX年、世界統一政府推進派が引き起こした<br>
+      第三次世界大戦は格的な戦闘状態に突入した。<br>
+      <br>
+      その戦いは、強力な艦砲による火力と、堅牢な防御力、<br>
+      またその機動性により「艦隊」による海戦が中心となっていた。<br>
+      <br>
+      艦隊が入り乱れる混沌とした戦いの火蓋は今切って落とされた。<br>
+      <br>
+    </p>
+      </td>
+  </tr>
+  <tr>
+    <td width="22" height="2">
+ </td>
+    <td width="729">
+<?php echo $mixi_thumbnail ?>
+<input type="submit" name="Submit" value="航行開始する" style="WIDTH: 150px; HEIGHT:40px">
+<input type="hidden" name="id" value="<?php echo $mixi_account_id ?>" />
+<input type="hidden" name="name" value="<?php echo $mixi_name ?>" />
+<input type="hidden" name="thumbnail" value="<?php echo $mixi_thumbnail ?>" />
+<input type="hidden" name="f_flag" value="1" />
+</td>
+  </tr>
+  <tr>
+    <td height="17" colspan="2">&nbsp;</td>
+  </tr>
+  <tr>
+    <td height="33" colspan="2">&nbsp;</td>
+  </tr>
+</table>
+</form>

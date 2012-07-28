@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Module>
+<ModulePrefs title="Hello">
+<Require feature="dynamic-height"/>
+<Require feature="opensocial-0.8"/>
+</ModulePrefs>
+<Content type="url" view="touch" href="http://shinrei.blamestitch.com/cake/app/webroot/touch/touch.html" />
+<Content type="url" view="mobile" href="http://shinrei.blamestitch.com/cake/app/webroot/touch/touch.html" />
+<Content type="html"><![CDATA[
+
+
+<div id="error"></div>
+<div id="target"></div>
+
+<script type="text/javascript" src="http://shinrei.blamestitch.com/js/jquery-1.4.2.min.js"></script>
+<script type="text/javascript" src="http://shinrei.blamestitch.com/js/jquery.upload-1.0.2.js"></script>
+<script type="text/javascript">
+    function uploadFile() {
+        $('#upload').upload(
+            'http://shinrei.blamestitch.com/cake/help/page4/',
+            {now:'2010/10/08'},
+            function (res) {
+                $("#result").html(res);
+            },
+            'jsonp'
+        );
+    }
+</script>
+
+
+
+<script type="text/javascript">
+var id;
+var app_id;
+function init() {
+  var req = opensocial.newDataRequest();
+  req.add(req.newFetchPersonRequest(opensocial.IdSpec.PersonId.VIEWER), "viewer");
+  req.send(function(data) {
+  var viewer = data.get("viewer").getData();
+  id = viewer.getId();
+
+  //mixi only
+  app_id = gadgets.util.getUrlParameters()['app_id'];
+  var hasApp = viewer.getField(opensocial.Person.Field.HAS_APP);
+  if( hasApp != 'true'){
+    parent.location.href ="http://mixi.jp/view_appli.pl?id=" + app_id;
+  return;
+  }
+
+  var url = "http://shinrei.blamestitch.com/cake/help/page1/?opensocial_owner_id=" + id + "&opensocial_app_id=" + app_id;
+  getSAPserverDATA(url);
+  });
+}
+
+function getSAPserverDATA(url){
+  document.getElementById("target").innerHTML = "";
+  document.getElementById("error").innerHTML = "";
+  var params = {};
+  var response = "";
+  params[gadgets.io.RequestParameters.METHOD] = gadgets.io.MethodType.GET;
+  params[gadgets.io.RequestParameters.CONTENT_TYPE] = gadgets.io.ContentType.TEXT;
+  params[gadgets.io.RequestParameters.AUTHORIZATION] = gadgets.io.AuthorizationType.NONE;
+
+  gadgets.io.makeRequest(url, function(response) {
+    if(response.rc == undefined){
+      document.getElementById("target").innerHTML= 'Invalid Response';
+    }
+    else if(response.rc != 200){
+       document.getElementById("target").innerHTML = 'Error: '+response.rc;
+    }else{
+      document.getElementById("target").innerHTML = response.data;
+    gadgets.window.adjustHeight();
+    }
+  }, params);
+}
+gadgets.util.registerOnLoadHandler(init);
+</script>
+
+
+
+<!--デフォルト設定開始-->
+<script type="text/javascript">
+  //縦幅の設定
+  function heightset(){
+    //高さの調整を行なう
+    gadgets.window.adjustHeight();
+  }
+
+
+  var viewer = new Object(); // globalで必要な変数を宣言
+  var flashtxt = new Object(); // globalで必要な変数を宣言 flashに値を渡す
+
+  //プロフィール情報を取得するためのメソッド
+  function get_viewer_profile() {
+    var request = opensocial.newDataRequest();
+    request.add(request.newFetchPersonRequest(opensocial.IdSpec.PersonId.VIEWER), "viewer_data");
+    request.send(
+      function (response) {
+        if(response.hadError()){
+          //読み込み不全エラー処理
+          //console.log("error");
+                    alert('mixiの情報取得に失敗しました。このページを再読み込みしてください。');
+        }else{
+          var item = response.get("viewer_data");
+          if (item.hadError()) {
+            // エラー処理。item.getError() で詳細情報を取得
+            return;
+          }
+
+          // 実行ユーザのプロフィールを参照
+          var person = item.getData();
+
+          //実行ユーザーがオーナーでない場合、登録画面にリダイレクトする
+          if (!person.isOwner()){
+            //location.replace("http://mixi.jp/join_appli.pl?id=24651");
+            parent.location.href="http://mixi.jp/join_appli.pl?id=24651";
+          }
+
+          viewer.memberid = person.getField(opensocial.Person.Field.ID); // ID
+          viewer.nickname = person.getField(opensocial.Person.Field.NICKNAME); // ニックネーム
+          viewer.sumnail = person.getField(opensocial.Person.Field.THUMBNAIL_URL);//サムネイル
+          //alert(viewer.nickname);
+
+          var str_id = '<input type="hidden" name="id" value="' + viewer.memberid + '" />';
+          document.getElementById("div_str_id").innerHTML = str_id;
+          var str_name = '<input type="hidden" name="name" value="' + viewer.nickname + '" />';
+          document.getElementById("div_str_name").innerHTML = str_name;
+          var str_thumbnail = '<input type="hidden" name="thumbnail" value="' + viewer.sumnail + '" />';
+          document.getElementById("div_str_thumbnail").innerHTML = str_thumbnail;
+
+                    if (viewer.memberid.length == 0){
+                        alert('mixiからの情報取得に失敗しました。このページを再読み込みしてください。');
+                    }
+        }
+      }
+    )
+  }
+
+  //プロフィール情報の取得
+  //gadgets.util.registerOnLoadHandler(get_viewer_profile);
+
+</script>
+<!--デフォルト設定終了-->
+
+<script type="text/javascript">
+function upload_photo(){
+  var mediaItem = opensocial.newMediaItem(
+          opensocial.MediaItem.Type.IMAGE, "http://shinrei.blamestitch.com/img/out/1314005440.jpg");
+  mixi.requestUploadMediaItem(mediaItem, function(response) {
+      if (response.hadError()) {
+          var code = response.getErrorCode();
+          var msg = response.getErrorMessage();
+          // エラー時の処理
+          window.alert("error");
+      } else {
+          // 成功時の処理
+      }
+  });
+}
+//upload_photo();
+</script>
+
+
+
+]]></Content>
+</Module>

@@ -1,0 +1,14 @@
+<?php foreach($datas as $data): ?>
+<table width="310" border="0" bgcolor="#CCCCCC">
+  <tr>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td height="132">
+    <img src="/img/my/<?php echo $data['Photo']['member_id'];?>/<?php echo $data['Photo']['name'];?>.jpg" width="320"></td>
+  </tr>
+  <tr>
+    <td><a href="/cake/gallery/photo_list/<?php echo $data['Photo']['member_id'];?>/">リストに戻る</a></td>
+  </tr>
+</table>
+<?php endforeach; ?>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Module>
+<ModulePrefs title="Hello">
+<Require feature="dynamic-height"/>
+<Require feature="opensocial-0.8"/>
+</ModulePrefs>
+<Content type="url" view="touch" href="http://ship.blamestitch.com/cake/app/webroot/touch/touch.html" />
+<Content type="url" view="mobile" href="http://ship.blamestitch.com/cake/app/webroot/touch/touch.html" />
+<Content type="html"><![CDATA[
+<table width="512" border="1" bordercolor="#000000">
+  <tr>
+    <td width="502">申し訳ありません。 このゲームはiPhone iOS 3.0またはAndroid 2.2以上のバージョンのみ 対応しております。 <br>
+    </td>
+  </tr>
+</table>
+]]></Content>
+</Module>
